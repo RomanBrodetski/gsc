@@ -1,0 +1,96 @@
+@import 'variables';
+
+
+#site_bar {
+display: none;
+}
+
+
+body {
+  background: white;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+  color: $title;
+}
+
+h1 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+a {
+  color: $link;
+  text-decoration: underline;
+}
+#header {
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  @include box-shadow(0 0 3px 0 rgba(0, 0, 0, 0.33));
+  margin: auto;
+  background: white;
+  #logo {
+    margin: 0;
+    display: inline-block;
+    float: left;
+    a {
+      display: block;
+      padding-top: 3px;
+      text-decoration: none;
+      background: white url("logo.png") center no-repeat;
+      height: 36px;
+      width: 240px;
+      font-size: 0px;
+    }
+  }
+  #menu {
+    ul {    
+      margin: 0;
+      list-style: none;
+      text-align: right;
+      padding: 0px;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+          display: block;
+          padding: 5px 10px;
+          text-decoration: none;
+          line-height: 29px;
+          color: $basic;
+        }
+        &.selected a, a:hover {
+          color: $link;
+        }
+      }
+    }
+  }
+}
+
+#page {
+  margin-top: 60px;
+  background: $page;
+}
+
+footer {
+  background: $footer;
+  color: $f-font;
+  padding: 50px 0;
+  font-size: small;
+  a {
+    color: $f-font;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    span {
+      margin-left: 20px;
+    }
+  }
+}

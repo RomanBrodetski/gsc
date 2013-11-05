@@ -1,0 +1,28 @@
+<div class="container_12">
+  <div class="grid_6">
+    <h1>Контакты</h1>
+    <ul>
+      <li>
+        <%= image_tag ('map_pin.png') %>
+        <span>190020, Санкт-Петербург, Либавский пер. 5, лит. З, оф. 4</span>
+      </li>
+      <li>
+        <%= image_tag ('phone.png') %>
+        <span>Тел./факс: +7 (812) 309-59-66</span></li>
+      <li>
+        <%= image_tag ('letter.png') %>
+        <span>Эл. почта: office@genshipcompany.com</span></li>
+      </li>
+    </ul>
+    <span>
+      <%#= t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name) %>
+      «Дженерал Шипинг Компани» © 2009—2013
+      <br/>
+      Сайт разработан в Креативном Агентстве Woomy
+    </span>
+  </div>
+  <div class="grid_6">
+    <h1>Сферы деятельности</h1>
+    <%= footer_menu.to_html %>
+  </div>
+

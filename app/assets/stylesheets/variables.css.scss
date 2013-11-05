@@ -1,0 +1,23 @@
+$page: #f0f0f0;
+
+$blue: #053047;
+
+$footer: #053047;
+$f-font: #CCCCCC;
+
+$title: #298D2C;
+$link: #5FA6CD;
+$grey: #E3E3E3;
+$basic: black;
+$slider-green: rgba(41,141,44, 0.7);
+$slider-blue: rgba(5,48,71, 0.7);
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+      -ms-box-shadow: $shadow;
+       -o-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);

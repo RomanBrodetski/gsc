@@ -1,0 +1,54 @@
+@import 'variables';
+
+
+.clock_container {
+    display: inline-block;
+    margin-right:2px;
+    width:170px;
+    position: relative;
+}
+.clock_container .lbl {
+    color: $blue;
+    line-height: 22px;
+    padding-top: 10px;
+    /*background: url(../images/clock_label.png);*/
+    text-align: center;
+    height: 27px;
+    width: 108px;
+    margin: 0 auto;
+}
+.clockHolder {
+    width:160px; 
+    margin:0 auto;
+    position:relative;
+}
+.clock {
+    margin-left:5px;
+}
+
+.sec {
+    display:block;
+    position:absolute;
+}
+.min {
+    display:block;
+    position:absolute;
+}
+.hour {
+    display:block;
+    position:absolute;
+}
+
+.rotatingWrapper {
+    position:absolute;
+    width:100px;
+    height:100px;
+    left: 5px;
+
+}
+.digital {
+    font-weight:bold;
+    font-size: 14px;
+    color: #444444;
+    text-align:center;
+}

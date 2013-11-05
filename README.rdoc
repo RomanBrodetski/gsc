@@ -1,0 +1,12 @@
+== Основные ссылки
+
+* http://refinerycms.com/guides/getting-started
+* http://refinerycms.com/guides
+* http://habrahabr.ru/post/160807/
+
+== Прочее
+* Стили - как в обычном rails-приложении
+* Контент придется писать прямо в цмске, или копировать туда. Потом скопипастим на продакшн.
+
+== Еще ссылки
+* cancan http://stackoverflow.com/questions/7175270/can-i-use-refinerycms-with-cancan-or-similar
