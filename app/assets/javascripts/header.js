@@ -1,3 +1,6 @@
-$( window ).on( "scroll", function(){
-  $("#header").css("padding", "10px")
-} )
+// $( window ).on( "scroll", function(){
+
+//   $( "#header" ).animate({
+//     padding: 10px
+//   }, 5000);
+// } )
