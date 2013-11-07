@@ -111,6 +111,26 @@ a {
     }
   }
 /*end*/
+
+/*specific for contact page*/
+  .accordion {
+    dt {
+      padding-left: 30px;
+      background: url("plus.png") left center no-repeat;
+      &:hover {
+        background: url("plus-hover.png") left center no-repeat;
+      }
+    }
+    dt.opened, dt.opened:hover {
+      background: url("minus.png") left center no-repeat;
+    }
+    dd {
+      margin: 0;
+      padding-left: 30px;
+      padding-top: 10px;
+    }
+  }
+/*end*/
 }
 
 .contacts {
