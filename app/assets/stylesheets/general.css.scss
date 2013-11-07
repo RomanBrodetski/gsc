@@ -95,35 +95,66 @@ a {
       font-weight: 700;
     }
   }
+/*specific for contact page*/
+  .department {
+    margin-bottom: 30px;
+  }
+  .card-contact img {
+    float: left;
+    margin: 0 20px 10px 0;
+  }
+  #feedback {
+    color: $green;
+    input {
+      display: block;
+      width: 100%;
+    }
+  }
+/*end*/
 }
 
-ul.contacts {
+.contacts {
   position: relative;
   list-style: none;
   padding: 0;
-  /*margin-bottom: 50px;*/
   li {
     margin-bottom: 5px;
   }
-  img {
-    position: absolute;
-  }
   span {
-    margin-left: 30px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 10px;
+    line-height: 20px;
+  }
+  .contacts_bl-pin {
+    background: url("bl-pin.png") 3px center no-repeat;
+  }
+  .contacts_bl-fax {
+    background: url("bl-fax.png") 1px 1px no-repeat;
+  }
+  .contacts_bl-phone {
+    background: url("bl-phone.png") 1px 2px no-repeat;
+  }
+  .contacts_bl-mail {
+    background: url("bl-mail.png") 2px 3px no-repeat;
   }
 }
 
-/*specific for contact page*/
-.card-contact img {
-  float: left;
-  margin: 0 20px 10px 0;
-}
 
 footer {
   background: $footer;
   color: $f-font;
   padding: 50px 0;
   font-size: small;
+  .contacts_pin {
+    background: url("map_pin.png") 3px center no-repeat;
+  }
+  .contacts_mail {
+    background: url("letter.png") 2px 2px no-repeat;
+  }
+  .contacts_phone {
+    background: url("phone.png") 1px 3px no-repeat;
+  }
   a {
     color: $f-font;
   }
