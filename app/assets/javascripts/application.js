@@ -17,3 +17,4 @@ $("#clock_msk").jClocksGMT({offset: '+4'});
 $("#clock_lon").jClocksGMT({offset: '0'});
 $("#clock_sha").jClocksGMT({offset: '+8'});
 $("#clock_ny").jClocksGMT({offset: '-4'});
+
