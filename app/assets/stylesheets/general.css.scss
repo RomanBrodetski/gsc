@@ -7,7 +7,7 @@ display: none;
 
 
 body {
-  /*background: white;*/
+  background: $page;
   margin: 0;
   font-family: 'PT Sans', sans-serif;
   font-size: 0.9em;
@@ -112,6 +112,12 @@ a {
     input {
       display: block;
       width: 100%;
+      background: #E0E0E0;
+      height: 25px;
+      border: none;
+      border-bottom: 1px solid white;
+      border-top: 1px solid #c0c0c0;
+      margin: 10px 0;
     }
   }
 /*end*/
