@@ -9,7 +9,7 @@
 // })
 
 
-$(document).ready(function(){
-  $('.bxslider').bxSlider();
+$(window).load(function() {
+  $('.flexslider').flexslider();
 });
 
