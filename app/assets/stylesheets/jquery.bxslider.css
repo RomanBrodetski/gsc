@@ -99,20 +99,20 @@
 
 .bx-wrapper .bx-prev {
   left: 0px;
-  background: rgba(5, 48, 71, 0.7) url(prev.png) no-repeat center;
+  background: rgba(5, 48, 71, 0.7) url("prev.png") no-repeat center;
 }
 
 .bx-wrapper .bx-next {
   right: 0px;
-  background: rgba(5, 48, 71, 0.7) url(next.png) no-repeat center;
+  background: rgba(5, 48, 71, 0.7) url("next.png") no-repeat center;
 }
 
 .bx-wrapper .bx-prev:hover {
-  background:  rgb(5, 48, 71) url(prev.png) no-repeat center;
+  background:  rgb(5, 48, 71) url("prev.png") no-repeat center;
 }
 
 .bx-wrapper .bx-next:hover {
-  background:  rgb(5, 48, 71) url(next.png) no-repeat center;
+  background:  rgb(5, 48, 71) url("next.png") no-repeat center;
 }
 
 .bx-wrapper .bx-controls-direction a {
