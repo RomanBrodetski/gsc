@@ -1,4 +1,5 @@
 $(document).scroll(function() {
+  $('#slider').css('top',$(document).scrollTop() / 1.3);
   var scroll = $(document).scrollTop();
   var padd = 20
 
