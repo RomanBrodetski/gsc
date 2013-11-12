@@ -1,0 +1,35 @@
+@import 'variables';
+
+#contact-page {
+  table {
+    width: 960px;
+    margin: 60px auto;
+    caption {
+      text-align: left;
+      font-size: 1.3em;
+      text-transform: uppercase;
+      color: $green;
+    }
+    td {
+      display: inline-block;
+      width: 460px;
+      margin: 10px 0;
+      > img {
+        float: left;
+      }
+      strong {
+        padding-left: 10px;
+      }
+      ul {
+      padding-left: 10px;
+      list-style: none;
+      display: inline-block;
+      img {
+        padding-right: 5px; 
+        text-align: left;
+      }
+    }  
+    }
+    
+  }
+}
