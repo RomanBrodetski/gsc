@@ -98,6 +98,8 @@
   position: relative;
   display: block;
   width: 100%;
+  overflow: hidden;
+  max-height: 600px;
   /*height: 440px;*/
   /*margin-bottom: 60px;*/
   /*background: url("slider.png") center;*/
