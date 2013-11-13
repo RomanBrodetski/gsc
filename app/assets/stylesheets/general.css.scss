@@ -27,11 +27,19 @@ h1 {
 
 h2 {
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-transform: uppercase;
+  font-weight: 700;
   color: $green;
   padding-top: 40px;
 }
+
+h3 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $blue;
+}  
 
 h4 {
   display: inline;
@@ -135,10 +143,11 @@ a {
     }
   }
 
-/*specific for contact page*/
   .content {
-    margin-bottom: 50px;
+    margin: 50px auto;
   }
+
+/*specific for contact page*/
   .department {
     h2 {
       margin-top: 50px;
@@ -203,6 +212,81 @@ a {
     }
   }
 /*end*/
+
+/*sea page*/
+  .interactive-map {
+    background: url("bg-mapsea.png") no-repeat;
+    height: 400px;
+  }
+
+  .rus-map {
+    .rus-map_lists {
+      height: 80px;
+      border-left: 1px solid $green;
+      border-right: 1px solid $green;
+      ul {
+        padding-left: 30px;
+        float: left;
+        li {
+          /*list-style-image: url("liststyle.png");
+          list-style-position: inside;*/
+        }
+      }
+    }
+    .rus-map_pic {
+      height: 400px;
+      position: relative;
+      top: -55px;
+      background: url("rus-sea.png") no-repeat center;
+    }
+    .title-outline.bottom {
+      border: 1px solid $title;
+      border-top: none;
+      margin-top: 0;
+      h3.title {
+        top: 10px;
+      }
+    }
+  }
+
+  .counter {
+    margin: 50px auto;
+    img {
+      width: 100%;
+    }
+  }
+
+  .types {
+    color: #585858;
+    img {
+      margin-right: 30px;
+    }
+    .tables {
+      margin-top: 20px;
+      table {
+        margin-right: 30px;
+        display: inline-block;
+        border-spacing:0;
+        border-collapse: collapse;
+        th {
+          background: #585858;
+          color: $grey;
+          font-weight: normal;
+        }
+        tr {
+          background: #EBEBEB;
+          border: none;
+          td, th {
+            padding: 3px 10px;
+          }
+        }
+        tr:nth-child(2n) {
+          background: #E0E0E0;
+        }
+      }
+    }
+  }
+  /*end*/
 }
 
 .contacts {
