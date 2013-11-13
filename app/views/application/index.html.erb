@@ -1,9 +1,10 @@
+<section id="body">
 <div id="slider">
 <ul class="bxslider">
 <li>
 <img src="assets/slider.png" width="100%" />
   <div class="container_12 slider-content">
-  <div class="slider-title"><h1>морские контейнерные перевозки</h1>
+  <div class="slider-title"><h2>морские контейнерные перевозки</h2>
   </div>
   <div class="slider-text"><p>General Shipping Company Ltd. является членом Ассоциации российских экспедиторов (АРЭ), а также индивидуальным членом Международной Федерации Экспедиторских Ассоциаций (FIATA).</p>
   </div>
@@ -12,7 +13,7 @@
 <li>
 <img src="assets/slider2.png" width="100%" />
   <div class="container_12 slider-content">
-  <div class="slider-title"><h1>морские контейнерные перевозки</h1>
+  <div class="slider-title"><h2>морские контейнерные перевозки</h2>
   </div>
   <div class="slider-text"><p>General Shipping Company Ltd. является членом Ассоциации российских экспедиторов (АРЭ), а также индивидуальным членом Международной Федерации Экспедиторских Ассоциаций (FIATA).</p>
   </div>
@@ -40,20 +41,20 @@
 </div>
 <div id="plugin">
 <ul class="container_12">
-<li><span class="number">47</span>агентов по всему миру</li>
-<li><span class="number">50000</span>тонн ежегодного оборота</li>
-<li><span class="number">150</span>клиентов</li>
-<li><span class="number">1500</span>контейнеров в месяц</li>
+<li><span class="number"><%=copywriting("number_agents", :scope => :main_page) %></span>агентов по всему миру</li>
+<li><span class="number"><%=copywriting("number_tons", :scope => :main_page) %></span>тонн ежегодного оборота</li>
+<li><span class="number"><%=copywriting("number_clients", :scope => :main_page) %></span>клиентов</li>
+<li><span class="number"><%=copywriting("number_containers", :scope => :main_page) %></span>контейнеров в месяц</li>
 </ul>
 </div>
 <div class="container_12 content">
 <div class="grid_6">
-<h1>Наша история</h1>
-<p>Основанная в 2008 году, GSC Group успела зарекомендовать себя как надёжный партнёр. Наша задача - предоставление полного цикла логистических услуг своими силами, с минимальным использованием  аутсорсинга. Исторически являясь фрахтовым брокером, сегодня мы имеем сильные позиции не только в сфере морских контейнерных перевозок, но и в сфере железнодорожного транспорта, проектных перевозок и таможенного оформления. General Shipping Company Ltd. является зарегистрированным таможенным представителем с собственной лицензией.</p>
+<h2>Наша история</h2>
+<p><%=copywriting("our_history", :scope => :main_page) %></p>
 </div>
 <div class="grid_6">
-<h1>Фактор успеха</h1>
-<p>Немаловажным фактором нашего успеха является сплочённая команда профессионалов от разных отраслей, объединённых общей идеей. Наша цель – выведение всего логистического процесса на новый уровень доверия и качества, поэтому мы предлагаем только то, что действительно можем контролировать на каждом этапе и то, в чём действительно уверены. Суммарные объёмы компании по экспорту и импорту, на сегодняшний момент составляющие порядка 25000 TEU ежегодно, наглядно иллюстрируют положительную динамику. General Shipping Company Ltd. является членом Ассоциации российских экспедиторов (АРЭ), а также индивидуальным членом Международной Федерации Экспедиторских Ассоциаций (FIATA).</p>
+<h2>Фактор успеха</h2>
+<p><%=copywriting("success_factor", :scope => :main_page) %></p>
 </div>
 </div>
 <div id="time">
@@ -96,3 +97,4 @@
 </ul>
 </div>
 </div>
+</section>
