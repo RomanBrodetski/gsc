@@ -15,12 +15,14 @@
     margin-top: 20px;
     h3.title {
       position: relative;
+      font-weight: normal;
       top: -10px;
       display: inline-block;
       margin: 0;
       padding: 0 10px;
       color: $title;
       background: $page;
+      text-transform: capitalize;
     }
   }
   ul.index-list {
