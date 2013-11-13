@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @slider.headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Image</h1>
+    <p>
+      <%=raw @slider.image %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline</h1>
+    <p>
+      <%=raw @slider.headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @slider.title %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="sliders">
+      <% @sliders.each do |slider| %>
+        <li>
+          <%= link_to slider.headline, refinery.sliders_slider_path(slider) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,6 +1,22 @@
 <section id="body">
 <div id="slider">
 <ul class="bxslider">
+  <%- Refinery::Sliders::Slider.all.each do |slider| %>
+<li>
+<%= slider.image.html_safe %>
+  <div class="container_12 slider-content">
+  <div class="slider-title"><h2><%= slider.headline %></h2>
+  </div>
+  <div class="slider-text"><p><%= slider.title %></p>
+  </div>
+</div>
+</li>
+<%end%>
+</ul>
+</div>
+
+<!-- <div id="slider">
+<ul class="bxslider">
 <li>
 <img src="assets/slider.png" width="100%" />
   <div class="container_12 slider-content">
@@ -20,7 +36,7 @@
 </div>
 </li>
 </ul>
-</div>
+</div> -->
 <div class="slider-space"></div>
 <div class="body">
 <div class="container_12 activity">

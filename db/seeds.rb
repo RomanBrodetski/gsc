@@ -11,3 +11,6 @@ Refinery::Pages::Engine.load_seed
 
 # Added by RefineryCMS Copywriting engine
 Refinery::Copywriting::Engine.load_seed
+
+# Added by Refinery CMS Sliders extension
+Refinery::Sliders::Engine.load_seed
