@@ -1,4 +1,10 @@
 <section id='body'>
+  <div class="page-title">
+  <p>
+    <%= copywriting('pic', { :scope => 'header', :page => @page, :phrase_type => "wysiwyg"   }).html_safe%>
+  </p>
+  <h1 class="container_12">faq</h1>
+  </div>
   <%=raw @page.content_for(:body) %>
 </section>
 <!-- <section id='side_body'>
