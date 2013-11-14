@@ -25,6 +25,7 @@ gem 'fog'
 
 group :production do
   gem 'pg'
+  gem 'fog'
 end
 
 gem 'refinerycms-sliders', :path => 'vendor/extensions'
