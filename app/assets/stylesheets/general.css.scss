@@ -70,9 +70,10 @@ a {
     a {
       display: block;
       text-decoration: none;
-      background: white url("logo.png") center no-repeat;
       width: 240px;
-      font-size: 0px;
+      img {
+        vertical-align: middle;
+      }
     }
   }
   #menu {
