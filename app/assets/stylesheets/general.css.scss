@@ -84,25 +84,21 @@ a {
       padding: 0px;
       li {
         display: inline-block;
+        &.selected a {
+          color: $link;
+        }
         a {
           display: block;
           padding: 0 20px;
           text-decoration: none;
           color: $basic;
         }
-        a + ul {
-          display: none;
-        }
-        &.selected a {
-          color: $link;
-        }
         a:hover {
           background: $blue;
           color: white;
         }
-
-        a:hover + ul, a.selected + ul {
-          display: block;
+        a + ul {
+          display: none;
           position: absolute;
           background: #215570;
           li {
@@ -112,6 +108,9 @@ a {
             border-bottom: 1px solid $blue;
             a {
               color: $grey;
+            }
+            ul {
+              display: none;
             }
           }
         }
@@ -129,7 +128,7 @@ a {
 }
 
 #body {
-  margin-top: 60px;
+  margin-top: 50px;
   .page-title {
     position: relative;
     margin-bottom: 30px;
@@ -235,8 +234,6 @@ a {
     }
     .rus-map_pic {
       height: 400px;
-      position: relative;
-      top: -55px;
       background: url("rus-sea.png") no-repeat center;
     }
     .title-outline.bottom {
@@ -249,6 +246,7 @@ a {
     }
   }
 
+
   .counter {
     margin: 50px auto;
     img {
@@ -258,6 +256,7 @@ a {
 
   .types {
     color: #585858;
+    margin-bottom: 100px;
     img {
       margin-right: 30px;
     }

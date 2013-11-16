@@ -12,13 +12,13 @@ $(document).scroll(function() {
 
   $('.slider-content').animate('opacity', (450 - $(document).scrollTop()) / 450 )
 
-  // if (scroll >= 15) {
-  //   animation_img = animation_img.stop().animate({ 'height': [ 30, 'easeOutBounce']}, 70)
-  //   animation = animation.stop().animate({ "line-height": [ 40, 'easeOutBounce']}, 70);
-  // }
-  // else {
-  //   animation_img = animation_img.stop().animate({ 'height': [ 36, 'easeOutBounce']}, 70)
-  //   animation = animation.stop().animate({ "line-height": [ 70, 'easeOutBounce']}, 70);
-  // }
+  if (scroll >= 15) {
+    // animation_img = animation_img.stop().animate({ 'height': [ 30, 'swing']}, 70)
+    animation = animation.stop().animate({ "line-height": [ 50, 'swing']}, 70);
+  }
+  else {
+    // animation_img = animation_img.stop().animate({ 'height': [ 36, 'swing']}, 70)
+    animation = animation.stop().animate({ "line-height": [ 70, 'swing']}, 70);
+  }
 });
 
