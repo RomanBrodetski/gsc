@@ -84,6 +84,9 @@ a {
       padding: 0px;
       li {
         display: inline-block;
+        .last {
+          border-bottom: 1px solid #09364d;
+        }
         &.selected a {
           color: $link;
         }
@@ -94,23 +97,30 @@ a {
           color: $basic;
         }
         a:hover {
-          background: $blue;
+          background: rgba(33, 85, 112, 1);;
           color: white;
         }
         a + ul {
-          display: none;
+          /*display: none;*/
           position: absolute;
-          background: #215570;
+          background: rgba(33, 85, 112, .8);
           li {
+            position: relative;
             display: list-item;
             text-align: left;
             line-height: 35px;
-            border-bottom: 1px solid $blue;
+            border-top: 1px solid #09364d;
             a {
               color: $grey;
             }
             ul {
-              display: none;
+              /*display: none;*/
+              position: absolute;
+              left: 180px;
+              top: 0;
+              li {
+                border-left: 1px solid #09364d;
+              }
             }
           }
         }

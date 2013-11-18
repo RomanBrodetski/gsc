@@ -18,9 +18,13 @@
 
   $(document).ready(function () {
     $("#menu > ul > li").each(function(){
-      $(this).children('ul').css("min-width", $(this).width())
+      $(this).children('ul').css("min-width", $(this).width());
+      // $(this).children('a + ul').css("left", $(this).width());
     })
-    $("#menu > ul > li").hover(
+    $("#menu ul ul a + ul").each(function(){
+      $(this).css("left", $(this).parent().width());
+    })
+    $("#menu ul > li").hover(
   function () {
     $(this).children('ul').slideDown('medium');
   }, 
