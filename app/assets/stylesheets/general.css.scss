@@ -39,7 +39,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   color: $blue;
-}  
+}
 
 h4 {
   display: inline;
@@ -77,7 +77,7 @@ a {
     }
   }
   #menu {
-    ul {    
+    ul {
       margin: 0;
       list-style: none;
       text-align: right;
@@ -143,6 +143,10 @@ a {
   .page-title {
     position: relative;
     margin-bottom: 30px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
     h1 {
       top: 0;
       position: absolute;
@@ -231,10 +235,11 @@ a {
 
   .rus-map {
     .rus-map_lists {
-      height: 80px;
+      height: 60px;
       border-left: 1px solid $green;
       border-right: 1px solid $green;
       ul {
+        margin: 10px 0;
         padding-left: 30px;
         float: left;
         li {
@@ -244,7 +249,7 @@ a {
       }
     }
     .rus-map_pic {
-      height: 400px;
+      height: 306px;
       background: url("rus-sea.png") no-repeat center;
     }
     .title-outline.bottom {
@@ -259,9 +264,30 @@ a {
 
 
   .counter {
+    position: relative;
     margin: 50px auto;
-    img {
-      width: 100%;
+    height: 150px;
+    background: url('pattern.png') repeat-x;
+    .counter_box {
+      width: 700px;
+      height: 80px;
+      position: absolute;
+      top: 50%;
+      margin-top: -43px;
+      left: 50%;
+      margin-left: -350px;
+      background: white;
+      border: 3px solid #062A42;
+      border-radius: 6px;
+      text-align: center;
+      line-height: 80px;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #062A42;
+      span {
+        background: grey;
+      }
     }
   }
 

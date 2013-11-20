@@ -4,6 +4,7 @@ gem 'rails', '3.2.14'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'meta_request'
 end
 
 group :assets do
