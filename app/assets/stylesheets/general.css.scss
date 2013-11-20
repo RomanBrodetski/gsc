@@ -39,7 +39,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   color: $blue;
-}  
+}
 
 h4 {
   display: inline;
@@ -77,7 +77,7 @@ a {
     }
   }
   #menu {
-    ul {    
+    ul {
       margin: 0;
       list-style: none;
       text-align: right;
@@ -101,7 +101,7 @@ a {
           color: white;
         }
         a + ul {
-          /*display: none;*/
+          display: none;
           position: absolute;
           background: rgba(33, 85, 112, .8);
           li {
