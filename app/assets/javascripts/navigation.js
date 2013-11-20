@@ -28,9 +28,11 @@
     })
     $("#menu ul > li").hover(
   function () {
+    $('ul').stop(true, true)
     $(this).children('ul').stop(true, true).slideDown('medium');
   },
   function () {
+    $('ul').stop(true, true)
     $(this).children('ul').stop(true, true).slideUp('medium');
   }
 );
