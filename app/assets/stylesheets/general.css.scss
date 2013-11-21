@@ -1,5 +1,15 @@
 @import 'variables';
 
+#ascrail2000 {
+  background-color: #666;
+  width: 16px!important;
+  z-index: 100000!important;
+  div {
+    border: none !important;
+    width: 15px !important;
+    border-radius: 6px !important;
+  }
+}
 
 #site_bar {
 display: none;
@@ -77,6 +87,12 @@ a {
     }
   }
   #menu {
+    .select_link {
+      background: rgba(33, 85, 112, 1);
+      a {
+        color: white;
+      }
+    }
     ul {
       margin: 0;
       list-style: none;
@@ -87,7 +103,7 @@ a {
         .last {
           border-bottom: 1px solid #09364d;
         }
-        &.selected a {
+        &.selected > a {
           color: $link;
         }
         a {
@@ -97,7 +113,7 @@ a {
           color: $basic;
         }
         a:hover {
-          background: rgba(33, 85, 112, 1);;
+          background: rgba(33, 85, 112, 1);
           color: white;
         }
         a + ul {

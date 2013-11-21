@@ -28,13 +28,15 @@
     // });
     $("#menu ul > li").hover(
       function () {
-        $('ul').stop(true, true)
+        $('ul').stop(true, true);
+        $(this).addClass('select_link');
         $(this).children('ul ul a + ul').css("left", $(this).width());
         $(this).children('ul').slideDown('medium');
       }, 
       function () {
         $('ul').stop(true, true)
         $(this).children('ul').slideUp('medium');
+        $(this).removeClass('select_link')
       }
     );
   });
