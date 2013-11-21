@@ -440,13 +440,14 @@ footer {
         text-transform: uppercase;
         font-weight: 700;
         a {color: $green;text-decoration: none;}
-        ul {}
         li {
           text-align: left;
           font-size: small;
+          line-height: 20px;
+          margin-bottom: 5px;
           text-transform: none;
           font-weight: normal;
-          a {color:  $f-font;}
+          a {color:  $f-font;text-decoration: underline;}
         }
       }
     }
