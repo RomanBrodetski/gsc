@@ -105,6 +105,7 @@ a {
           position: absolute;
           background: rgba(33, 85, 112, .8);
           li {
+            white-space: nowrap;
             position: relative;
             display: list-item;
             text-align: left;
@@ -114,10 +115,10 @@ a {
               color: $grey;
             }
             ul {
-              /*display: none;*/
+              display: none;
               position: absolute;
               left: 180px;
-              top: 0;
+              top: -1px;
               li {
                 border-left: 1px solid #09364d;
               }
