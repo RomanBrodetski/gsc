@@ -31,7 +31,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 700;
   color: $green;
-  padding-top: 40px;
+  margin-top: 50px;
 }
 
 h3 {
@@ -129,79 +129,113 @@ a {
     }
   }
 }
-
 #header.scroll {
   padding: 10px;
 }
 
-#page {
-  background: $page;
+// #page {background: $page;}
+
+
+#page-title {
+  position: relative;
+  margin-top: 60px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    margin-top: -22px;
+    margin-left: -480px;
+  }
 }
 
-#body {
-  margin-top: 50px;
-  .page-title {
-    position: relative;
-    margin-bottom: 30px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-    h1 {
-      top: 0;
-      position: absolute;
-      left: 50%;
-      line-height: 170px;
-      margin: 0;
-      margin-left: -480px;
-    }
-  }
 
-  .content {
-    margin: 50px auto;
-  }
+
+#body {
+  margin: 20px auto 80px;
+  
+  // .content {margin: 50px auto;}
 
 /*specific for contact page*/
-  .department {
-    h2 {
-      margin-top: 50px;
+  #contacts {
+    h2 {margin-top: 40px;}
+    .contacts {
+      margin-bottom: 60px;
     }
-  }
-  .card-contact img {
-    float: left;
-    margin: 0 20px 10px 0;
-  }
-  #feedback {
-    color: $green;
-    input {
-      display: block;
+    table {
       width: 100%;
-      background: #E0E0E0;
-      height: 25px;
-      border: none;
-      border-bottom: 1px solid white;
-      border-top: 1px solid #c0c0c0;
-      margin: 10px 0 20px;
+      margin: 0px auto;
+      padding: 0; 
+      caption {
+        text-align: left;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        color: $green;
+      }
+      td {
+        display: inline-block;
+        width: 460px;
+        margin: 0;
+        > img {
+          float: left;
+        }
+        > strong {
+          padding-left: 10px;
+          font-size: 1.2em;
+        }
+        ul {
+        padding-left: 10px;
+        list-style: none;
+        display: inline-block;
+          li {
+            padding-bottom: 3px;
+          }
+          img {
+            padding-right: 5px; 
+            text-align: left;
+          }
+        }  
+      }  
     }
-    textarea {
-      display: block;
-      resize: both;
-      min-height: 120px;
-      width: 100%;
-      max-height: 200px;
-      border: none;
-      border-bottom: 1px solid white;
-      border-top: 1px solid #c0c0c0;
-      background: #E0E0E0;
-      margin: 10px 0;
+    #map {
+      margin: 50px auto;
+      img {
+        width: 100%;
+      }
+    }
+    #feedback {
+      color: $green;
+      input {
+        display: block;
+        width: 100%;
+        background: #E0E0E0;
+        height: 25px;
+        border: none;
+        border-bottom: 1px solid white;
+        border-top: 1px solid #c0c0c0;
+        margin: 10px 0 20px;
+      }
+      textarea {
+        display: block;
+        resize: both;
+        min-height: 120px;
+        width: 100%;
+        max-height: 200px;
+        border: none;
+        border-bottom: 1px solid white;
+        border-top: 1px solid #c0c0c0;
+        background: #E0E0E0;
+        margin: 10px 0;
+      }
     }
   }
-/*end*/
+  /*end*/
 
-/*specific for faq page*/
-  #faq-page .content {
-      margin-bottom: 50px;
-    }
+  /*specific for faq page*/
   .accordion {
     margin: 0;
     padding: 10px 0;
@@ -261,8 +295,6 @@ a {
       }
     }
   }
-
-
   .counter {
     position: relative;
     margin: 50px auto;
@@ -290,7 +322,6 @@ a {
       }
     }
   }
-
   .types {
     color: #585858;
     margin-bottom: 100px;
@@ -362,6 +393,9 @@ footer {
     padding: 0;
     margin: 0;
   }
+  ul {
+    margin: 14px auto;
+  }
   .contacts_pin {
     background: url("map_pin.png") 3px center no-repeat;
   }
@@ -373,5 +407,32 @@ footer {
   }
   a {
     color: $f-font;
+  }
+  .footer_menu {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    > ul {
+      margin: 0;
+      > li {
+        margin-left: 100px;
+        vertical-align: top;
+        display: inline-block;
+        text-align: left;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        font-weight: 700;
+        a {color: $green;text-decoration: none;}
+        ul {}
+        li {
+          text-align: left;
+          font-size: small;
+          text-transform: none;
+          font-weight: normal;
+          a {color:  $f-font;}
+        }
+      }
+    }
   }
 }
