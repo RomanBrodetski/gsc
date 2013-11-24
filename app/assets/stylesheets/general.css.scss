@@ -278,10 +278,18 @@ a {
 /*end*/
 
 /*sea page*/
+  .content {
+    padding-top: 20px;
+  }
   .interactive-map {
     background: url("bg-mapsea.png") no-repeat;
+    color: white;
     height: 400px;
     margin: 50px auto 30px;
+    h2 {
+      margin-top: 100px;
+      color: white;
+    }
   }
 
   .rus-map {
@@ -332,17 +340,17 @@ a {
   }
   .counter {
     position: relative;
-    margin: 100px auto 60px;
+    margin: 100px auto 40px;
     height: 150px;
     background: url('pattern.png') repeat-x;
     .counter_box {
-      width: 700px;
+      width: 800px;
       height: 80px;
       position: absolute;
       top: 50%;
       margin-top: -43px;
       left: 50%;
-      margin-left: -350px;
+      margin-left: -400px;
       background: white;
       border: 3px solid #062A42;
       border-radius: 6px;
@@ -352,14 +360,35 @@ a {
       text-transform: uppercase;
       font-weight: bold;
       color: #062A42;
-      span {
-        background: grey;
+      ul {
+        display: inline;
+        padding: 0;
+        margin: 0 20px;
+        li {
+          background: black;
+          border-radius: 5px;
+          color: white;
+          font-size: 35px;
+          display: inline;
+          list-style: none;
+          padding: 5px 7px;
+          position: relative;
+          .counter__line {
+            position: absolute;
+            display: block;
+            width: 32px;
+            height: 1px;
+            top: 24px;
+            left: 0;
+            border: 1px solid black;
+            background: #3C3C3C;
+          }
+        }
       }
     }
   }
   .types {
     color: #585858;
-    margin-bottom: 100px;
     img {
       margin-right: 30px;
     }
@@ -388,6 +417,10 @@ a {
         tr:nth-child(2n) {
           background: #E0E0E0;
         }
+      }
+      .tables_special td {
+        height: 68px;
+        text-align: center;
       }
     }
   }
