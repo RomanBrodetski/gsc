@@ -19,6 +19,10 @@
 
   $(document).ready(function () {
 
+  
+    $("#menu a + ul > li").has("ul").children("a").addClass("has-menu-right");
+    $("#menu > ul > li").has("ul").children("a").addClass("has-menu");
+
     $("#menu > ul > li").each(function(){
       $(this).children('ul').css("min-width", $(this).width());
       // $(this).children('a + ul').css("left", $(this).width());

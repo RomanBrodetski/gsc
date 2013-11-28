@@ -105,16 +105,25 @@ a {
         }
         &.selected > a {
           color: $link;
+          background: url("arr-down.png") no-repeat center right;
+        }
+        a.has-menu {
+          margin-right: 15px;
+          background: url("arr-down-gr.png") no-repeat center right;
+          &:hover {
+            background: url("arr-down.png") no-repeat center right;
+          }
         }
         a {
           display: block;
-          padding: 0 20px;
+          padding: 0 15px;
+          
           text-decoration: none;
-          color: $basic;
-        }
-        a:hover {
-          background: rgba(33, 85, 112, 1);
-          color: white;
+          color: #808080;
+          &:hover {
+            background: rgba(33, 85, 112, 1);
+            color: white;
+          }
         }
         a + ul {
           display: none;
@@ -127,6 +136,13 @@ a {
             text-align: left;
             line-height: 35px;
             border-top: 1px solid #09364d;
+            a.has-menu-right {
+              background: url("arr-right.png") no-repeat center right;
+              margin-right: 15px;
+              &:hover {
+                background: url("arr-right.png") no-repeat center right;  
+              }
+            }
             a {
               color: $grey;
             }
