@@ -402,6 +402,19 @@ a {
   }
   .types {
     color: #585858;
+    a {
+      vertical-align: 3px;
+      font-size: 14px;
+      text-transform: none;
+      background: green;
+      color: white;
+      padding: 7px 15px;
+      margin-left: 30px;
+      border-radius: 5px;
+      line-height: 1.4em;
+      text-decoration: none;
+      font-weight: normal;
+    }
     img {
       margin-right: 30px;
     }
