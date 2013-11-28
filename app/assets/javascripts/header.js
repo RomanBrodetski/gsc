@@ -25,5 +25,8 @@ $(document).scroll(function() {
     // animation_img = animation_img.stop().animate({ 'height': [ 36, 'swing']}, 70)
     animation = animation.stop().animate({ "line-height": [ 70, 'swing']}, 70);
   }
+
+  $('.interactive-map').animate({'background-position-y': -$(document).scrollTop() / 3}, 10)
+
 });
 
