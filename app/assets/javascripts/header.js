@@ -26,7 +26,8 @@ $(document).scroll(function() {
     animation = animation.stop().animate({ "line-height": [ 70, 'swing']}, 70);
   }
 
-  $('.interactive-map').animate({'background-position-y': -$(document).scrollTop() / 3}, 10)
+  $('.interactive-map').css('background-position-y', -$(document).scrollTop() / 2.5)
+  // $('.interactive-map').animate({'background-position-y': -$(document).scrollTop() / 3}, 1)
 
 });
 
