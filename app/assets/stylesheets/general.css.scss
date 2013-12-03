@@ -194,13 +194,15 @@ a {
 
 /*specific for contact page*/
   #contacts {
-    h2 {margin-top: 40px;}
+    h2 {margin-top: 40px;
+        font-size: 1.2em}
     .contacts {
       margin-bottom: 60px;
     }
     table {
       width: 100%;
       margin: 0px auto;
+      margin-top: -10px;
       padding: 0;
       caption {
         text-align: left;
@@ -220,7 +222,7 @@ a {
           font-size: 1.2em;
         }
         ul {
-        padding-left: 10px;
+        padding-left: 0px;
         list-style: none;
         display: inline-block;
           li {
@@ -254,14 +256,22 @@ a {
       textarea {
         display: block;
         resize: both;
-        min-height: 120px;
+        min-height: 100px;
         width: 100%;
         max-height: 200px;
         border: none;
         border-bottom: 1px solid white;
         border-top: 1px solid #c0c0c0;
         background: #E0E0E0;
-        margin: 10px 0;
+        margin: 10px 0 20px;
+      }
+      button {
+        border: none;
+        padding: 10px 15px;
+        color: white;
+        background: green;
+        font-size: .9em;
+        cursor: pointer;
       }
     }
   }
