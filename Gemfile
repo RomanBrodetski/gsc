@@ -19,6 +19,7 @@ gem 'jquery-rails'
 gem 'refinerycms', '~> 2.1.0'
 gem 'refinerycms-copywriting', :git => "https://github.com/unixcharles/refinerycms-copywriting.git"
 gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
+gem 'refinerycms-i18n'
 
 gem 'heroku'
 
