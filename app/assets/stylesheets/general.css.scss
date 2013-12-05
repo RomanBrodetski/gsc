@@ -518,10 +518,9 @@ body #page { height: auto; min-height: 100%; }
 
 footer {
   clear: both;
- position: relative;
- z-index: 10;
- margin-top: -257px;
-
+  position: relative;
+  z-index: 10;
+  margin-top: -237px;
   height: 157px;
   background: $footer;
   color: $f-font;
