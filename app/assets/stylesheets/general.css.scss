@@ -63,11 +63,6 @@ a {
   text-decoration: underline;
 }
 
-html, body {
-  height: 100%;
-  margin-bottom: -70px;
-}
-
 #header {
   position: fixed;
   top: 0;
@@ -190,11 +185,7 @@ html, body {
   }
 }
 
-#page_container {
-  height: 100%;
-  position: relative;
-  margin-bottom: -257px;
-}
+
 
 #body {
   margin: 20px auto 80px;
@@ -517,9 +508,6 @@ html, body {
 
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   background: $footer;
   color: $f-font;
   padding: 50px 0;
