@@ -225,7 +225,8 @@ body #page { height: auto; min-height: 100%; }
         a + ul {
           display: none;
           position: absolute;
-          background: rgba(33, 85, 112, .8);
+          background: rgba(33, 85, 112, 0.8);
+          background: rgb(33, 85, 112)\9;
           li {
             white-space: nowrap;
             position: relative;
@@ -265,7 +266,7 @@ body #page { height: auto; min-height: 100%; }
 // #page {background: $page;}
 
 #body {
- padding-bottom: 257px 
+ padding-bottom: 237px 
 }
 
 #page-title {

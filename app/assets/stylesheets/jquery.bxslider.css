@@ -103,11 +103,13 @@
 .bx-wrapper .bx-prev {
   left: 0px;
   background: rgba(5, 48, 71, 0.7) url("prev.png") no-repeat center;
+  background-color: rgb(5, 48, 71)\9;
 }
 
 .bx-wrapper .bx-next {
   right: 0px;
   background: rgba(5, 48, 71, 0.7) url("next.png") no-repeat center;
+  background-color: rgb(5, 48, 71)\9;
 }
 
 .bx-wrapper .bx-prev:hover {
