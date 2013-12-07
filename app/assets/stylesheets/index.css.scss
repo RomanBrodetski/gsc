@@ -109,25 +109,6 @@
       display: block;
     }
   }
-  .prev, .next {
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    top: 50%;
-    margin-top: -25px;
-    cursor: pointer;
-  }
-  .prev {
-    background: url("prev.png") no-repeat center;
-    @include background-color($slider-blue);
-  }
-  .next {
-    background: url("next.png") no-repeat center;
-    @include background-color($slider-blue);
-    right: 0;
-  }
-
 
   .slider-content {
     position: absolute;
@@ -135,7 +116,8 @@
     left: 50%;
     margin-left: -480px;
     .slider-title {
-      @include background-color($slider-green); 
+      background-color: rgba(41,141,44, 0.7);
+      background-color: rgb(41,141,44)\9;
       display: inline-block;
       h2 {
         color: white;
@@ -144,7 +126,8 @@
       }
     }
     .slider-text {
-      @include background-color($slider-blue);
+      background-color: rgba(5,48,71, 0.7);
+      background-color: rgb(5,48,71)\9;
       width: 60%;
       p {
         color: white;

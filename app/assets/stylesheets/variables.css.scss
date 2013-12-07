@@ -13,15 +13,6 @@ $green: #298D2C;
 $basic: black;
 
 
-@mixin background-color($slider-green) {
-  background-color: rgba(41,141,44, 0.7);
-  background-color: rgb(41,141,44)\9;
-}
-@mixin background-color($slider-blue) {
-  background-color: rgba(5,48,71, 0.7);
-  background-color: rgb(5,48,71)\9;
-}
-
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: $shadow;
      -moz-box-shadow: $shadow;
