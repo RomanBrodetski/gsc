@@ -20,16 +20,12 @@
   $(document).ready(function () {
 
   
-    $("#menu a + ul > li").has("ul").children("a").addClass("has-menu-right");
-    $("#menu > ul > li").has("ul").children("a").addClass("has-menu");
+    $("#menu a + ul > li").has("ul").addClass("has-menu-right");
+    $("#menu > ul > li").has("ul").addClass("has-menu");
 
     $("#menu > ul > li").each(function(){
       $(this).children('ul').css("min-width", $(this).width());
-      // $(this).children('a + ul').css("left", $(this).width());
     });
-    // $("#menu ul ul a + ul").each(function(){
-    //   $(this).css("left", $(this).parent().width());
-    // });
     $("#menu ul > li").hover(
       function () {
         $('ul').stop(true, true);
