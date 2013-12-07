@@ -13,11 +13,11 @@ $green: #298D2C;
 $basic: black;
 
 
-@mixin background($slider-green) {
+@mixin background-color($slider-green) {
   background: rgba(41,141,44, 0.7);
   background: rgb(41,141,44)\9;
 }
-@mixin background($slider-blue) {
+@mixin background-color($slider-blue) {
   background: rgba(5,48,71, 0.7);
   background: rgb(5,48,71)\9;
 }
