@@ -14,12 +14,12 @@ $basic: black;
 
 
 @mixin background-color($slider-green) {
-  background: rgba(41,141,44, 0.7);
-  background: rgb(41,141,44)\9;
+  background-color: rgba(41,141,44, 0.7);
+  background-color: rgb(41,141,44)\9;
 }
 @mixin background-color($slider-blue) {
-  background: rgba(5,48,71, 0.7);
-  background: rgb(5,48,71)\9;
+  background-color: rgba(5,48,71, 0.7);
+  background-color: rgb(5,48,71)\9;
 }
 
 @mixin box-shadow($shadow) {
