@@ -6,10 +6,19 @@
 </div>
 <div class="lang">
   <ul>
-    <li><a href="#">РУС</a></li>
-    <li><a href="#" class="selected">ENG</a></li>
-    <li><a href="#">ESP</a></li>
+  <li>
+    <%= link_to "РУС", {:locale => :ru}, :class => (params[:locale] == "ru" ? 'selected' : nil ) %>
+    </li>
+  <li>
+    <%= link_to "ENG", {:locale => :en}, :class => (params[:locale] == "en" ? 'selected' : nil) %>
+  </li>
+  <li>
+    <%= link_to "ESP", {:locale => :es}, :class => (params[:locale] == "es" ? 'selected' : nil) %>
+  </li>
+  <li>
+    <%= link_to "ZH-CN", {:locale => :zh}, :class => (params[:locale] == "zh" ? 'selected' : nil) %>
+  </li>
   </ul>
-  </div>
+</div>
 <script>
 </script>
