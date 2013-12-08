@@ -1,15 +1,16 @@
 <div class="container_12">
+<div class="grid_11">
   <h1 id='logo'>
     <a href="/"><img src="/assets/logo.png"></a>
   </h1>
   <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
 </div>
+</div>
 <div class="lang">
   <ul>
-    <li>en</li>
-    <li>ru</li>
-    <li>esp</li>
-    <li>smth</li>
+    <li><a href="#">РУС</a></li>
+    <li><a href="#" class="selected">ENG</a></li>
+    <li><a href="#">ESP</a></li>
   </ul>
   </div>
 <script>
