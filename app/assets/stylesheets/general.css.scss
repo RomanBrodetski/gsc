@@ -239,11 +239,79 @@ body #page { height: auto; min-height: 100%; }
 }
 
 
-
-#body {
+#page {
   margin: 20px auto 80px;
-
+  #stavka {
+    min-height: 600px
+  }
   // .content {margin: 50px auto;}
+
+  .form {
+    color: $green;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      margin-bottom: 20px;
+      padding: 0;
+      li span {
+        color: #414141;
+      }
+    }
+      input {
+        display: block;
+        width: 100%;
+        background: #E0E0E0;
+        height: 25px;
+        border: none;
+        border-bottom: 1px solid white;
+        border-top: 1px solid #c0c0c0;
+        margin: 10px 0 20px;
+
+        &[type='checkbox'] {
+          display: inline-block;
+          width: 20px;
+          margin: 0;
+          vertical-align: bottom;
+        }
+
+        &[type='submit'] {
+          background: $green;
+          display: inline-block;
+          border: none;
+          color: white;
+          font-size: 12px;
+          height: 30px;
+          width: 200px;
+          margin: 0;
+          margin-right: 30px;
+        }
+      }
+      textarea {
+        display: block;
+        resize: both;
+        min-height: 85px;
+        width: 100%;
+        max-height: 200px;
+        border: none;
+        border-bottom: 1px solid white;
+        border-top: 1px solid #c0c0c0;
+        background: #E0E0E0;
+        margin: 10px 0 20px;
+      }
+      button {
+        border: none;
+        padding: 10px 15px;
+        color: white;
+        background: green;
+        font-size: .9em;
+        cursor: pointer;
+      }
+    }
+  .form-extra-text {
+    vertical-align: bottom;
+  }
+  }
+
 
 /*specific for contact page*/
   #contacts {
@@ -546,7 +614,7 @@ body #page { height: auto; min-height: 100%; }
     }
   }
   /*end*/
-}
+
 
 .contacts {
   position: relative;

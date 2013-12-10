@@ -1,1 +1,87 @@
-Запрос ставки онлайн
+<section id="page-title">
+  <img src="/assets/stavka.png">
+  <h1>
+    Запрос ставки онлайн
+  </h1>
+</section>
+<div class="container_12">
+  <h2>Запрос ставки онлайн</h2>
+
+  <%= form_tag price_request_path, :class => "form", :id => "stavka" do %>
+
+    <div class="container_12">
+    <div class="grid_4">
+      <span>Контактное лицо*</span>
+      <%= text_field_tag :contact_person %>
+      
+      <span>Требуемый сервис*</span>
+      <ul>
+        <li>
+          <%= check_box_tag :by_sea %><span>Морская контейнерная перевозка</span>
+        </li>
+        <li>
+          <%= check_box_tag :custom %><span>Таможенное оформление</span>
+        </li>
+        <li>
+          <%= check_box_tag :by_car_or_train %><span>Автомобильная или ж/д перевозка</span>
+        </li>
+        <li>
+          <%= check_box_tag :storage %><span>Терминальные и складские операции</span>
+        </li>
+        <li>
+          <%= check_box_tag :oversize %><span>Перевозка негабаритных и проектных грузов</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid_4">
+      <span>E-mail*</span>
+      <%= text_field_tag :mail %>
+    </div>
+    <div class="grid_4">
+      <span>Телефон</span>
+      <%= text_field_tag :phone %>
+    </div>
+
+    <div class="grid_4">
+      <span>Пункт отправления</span>
+      <%= text_field_tag :mail %>
+    </div>
+    <div class="grid_4">
+      <span>Пункт назначения</span>
+      <%= text_field_tag :phone %>
+    </div>
+
+    <div class="grid_4 ">
+      <span>Тип контейнера</span>
+      <%= text_field_tag :type %>
+    </div>
+
+    <div class="grid_3 prefix_1">
+      <span>Груз</span>
+      <%= text_field_tag :cargo %>
+    </div>
+    </div>
+
+    <div class="container_12">
+      <div class="grid_4">
+        <span>Дополнительно</span>
+        <%= text_field_tag :extra %>
+      </div>
+      <div class="grid_4">
+        <span>Код ТНВЭД</span>
+        <%= text_field_tag :tnved %>
+      </div>
+      <div class="grid_4">
+        <span>Вес груза</span>
+        <%= text_field_tag :extra %>
+      </div>
+    </div>
+
+    <div class="grid_8">
+      <%= submit_tag 'Запросить ставку' %><span class="form-extra-text">* - поля обязательные для заполнения.</span>
+    </div>
+
+  <% end %>
+
+</div>
