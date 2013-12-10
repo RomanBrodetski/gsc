@@ -1,7 +1,9 @@
 @import 'variables';
 
+
 #index #body {
   margin: 0 auto;
+  margin-bottom: -80px;
   .title-outline {
     text-align: center;
     border: 1px solid $title;
