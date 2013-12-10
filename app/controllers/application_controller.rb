@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
   def index
   end
 
+  def price_request
+  end
+
+  def price_request_post
+
+  end
+
   private
 
   def set_locale
