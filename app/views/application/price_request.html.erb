@@ -52,12 +52,12 @@
       <%= text_field_tag :phone %>
     </div>
 
-    <div class="grid_4 ">
+    <div class="grid_5 ">
       <span>Тип контейнера</span>
-      <%= text_field_tag :type %>
+      <%= select_tag :type, options_for_select(['', '20-ти футовый (20’ DV)', '20-ти футовый (20’ HT)', '40-ка футовый (40’ DV)', '40-ка футовый высокий (20’ HC)', 'Рефрижераторный 20-ти футовый (20’ RC)', 'Рефрижераторный 40-ка футовый высокий (40’ RH)']), :placeholder => "Выберите тип контейнера"%>
     </div>
 
-    <div class="grid_3 prefix_1">
+    <div class="grid_3">
       <span>Груз</span>
       <%= text_field_tag :cargo %>
     </div>
@@ -83,5 +83,7 @@
     </div>
 
   <% end %>
+
+
 
 </div>

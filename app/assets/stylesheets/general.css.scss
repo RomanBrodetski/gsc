@@ -256,6 +256,43 @@ body #page { height: auto; min-height: 100%; }
       label {
         color: #414141;
       }
+      select {
+        display: block;
+        width: 100%;
+        background: white;
+        border: none;
+      }
+      //rewrite plugin style
+
+      .selectize-input.items.not-full.has-options, .selectize-input.items.has-options.full.has-items{
+        padding: 5px 8px;
+        min-height: 25px;
+        height:  29px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-radius: 0;
+        box-shadow: none;
+        vertical-align: baseline;
+      }
+      .selectize-dropdown [data-selectable] {
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
+      .selectize-dropdown-content {
+        padding: 0;
+        border: 0;
+      }
+      .selectize-dropdown {
+        box-shadow: none;
+      }
+      .selectize-control {
+        margin-top: 10px;
+        input {
+          height: auto;
+        }
+      }
+
       input {
         display: block;
         width: 100%;
