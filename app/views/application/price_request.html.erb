@@ -20,19 +20,19 @@
       <span>Требуемый сервис*</span>
       <ul>
         <li>
-          <%= check_box_tag :by_sea %><span>Морская контейнерная перевозка</span>
+          <%= check_box_tag :by_sea %><%= label_tag 'by_sea' do %><span></span>Морская контейнерная перевозка<% end %>
         </li>
         <li>
-          <%= check_box_tag :custom %><span>Таможенное оформление</span>
+          <%= check_box_tag :custom %><%= label_tag 'custom' do %><span></span>Таможенное оформление<% end %>
         </li>
         <li>
-          <%= check_box_tag :by_car_or_train %><span>Автомобильная или ж/д перевозка</span>
+          <%= check_box_tag :by_car_or_train %><%= label_tag 'by_car_or_train' do %><span></span>Автомобильная или ж/д перевозка<% end %>
         </li>
         <li>
-          <%= check_box_tag :storage %><span>Терминальные и складские операции</span>
+          <%= check_box_tag :storage %><%= label_tag 'storage' do %><span></span>Терминальные и складские операции<% end %>
         </li>
         <li>
-          <%= check_box_tag :oversize %><span>Перевозка негабаритных и проектных грузов</span>
+          <%= check_box_tag :oversize %><%= label_tag 'oversize' do %><span></span>Перевозка негабаритных и проектных грузов<% end %>
         </li>
       </ul>
     </div>
