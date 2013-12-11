@@ -15,6 +15,18 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+Mail.defaults do
+  delivery_method :smtp, {  :enable_starttls_auto => true,
+      :address            => 'smtp.gmail.com',
+      :port               => 587,
+      :domain             => 'smtp.gmail.com', #you can also use google.com
+      :authentication     => :plain,
+      :user_name          => 'gsc.service.bot@gmail.com',
+      :password           => '1200MicS' }
+
+end
+
+
 module Gsc
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -66,5 +78,22 @@ module Gsc
     config.assets.version = '1.0'
 
     config.assets.initialize_on_precompile = true
+
+    # require 'tlsmail'
+    # Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+
+    # ActionMailer::Base.delivery_method = :smtp
+    # ActionMailer::Base.perform_deliveries = true
+    # ActionMailer::Base.raise_delivery_errors = true
+    # ActionMailer::Base.smtp_settings = {
+    #   :enable_starttls_auto => true,
+    #   :address            => 'smtp.gmail.com',
+    #   :port               => 587,
+    #   :tls                  => true,
+    #   :domain             => 'gmail.com', #you can also use google.com
+    #   :authentication     => :plain,
+    #   :user_name          => 'gsc.service.bot@gmail.com',
+    #   :password           => '1200MicS'
+    # }
   end
 end
