@@ -250,13 +250,12 @@ body #page { height: auto; min-height: 100%; }
     color: $green;
     ul {
       list-style-type: none;
-      margin: 0;
-      margin-bottom: 20px;
+      margin: 10px 0;
       padding: 0;
-      li span {
+    }
+      label {
         color: #414141;
       }
-    }
       input {
         display: block;
         width: 100%;
@@ -268,10 +267,18 @@ body #page { height: auto; min-height: 100%; }
         margin: 10px 0 20px;
 
         &[type='checkbox'] {
-          display: inline-block;
-          width: 20px;
-          margin: 0;
-          vertical-align: bottom;
+          display: none;
+          + label span {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin: -2px 8px 0 0;
+            vertical-align: middle;
+            background: url("checkbox.png") no-repeat;
+          }
+          &:checked + label span {
+            background: url("checkbox--checked.png") no-repeat;
+          }
         }
 
         &[type='submit'] {
