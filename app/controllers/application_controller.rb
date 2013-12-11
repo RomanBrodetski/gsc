@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
     mail[:subject] = "price_request"
     mail.text_part =  Mail::Part.new
     mail.text_part.body = form_text params
-    mail["to"] = "gsc.service.bot@gmail.com"
+    mail["to"] = "office@genshipcompany.com"
     puts mail.deliver
 
     redirect_to :price_request, :notice => :success
@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
     mail[:subject] = "contact"
     mail.text_part =  Mail::Part.new
     mail.text_part.body = form_text params
-    mail["to"] = "gsc.service.bot@gmail.com"
+    mail["to"] = "office@genshipcompany.com"
     puts mail.deliver
 
     redirect_to "/contacts"
