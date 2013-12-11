@@ -5,6 +5,9 @@
   </h1>
 </section>
 <div class="container_12">
+<% if flash[:notice] %>
+  Спасибо, ваше сообщение отправлено!
+<% end %>
   <h2>Запрос ставки онлайн</h2>
 
   <%= form_tag price_request_path, :class => "form", :id => "stavka" do %>
@@ -13,7 +16,7 @@
     <div class="grid_4">
       <span>Контактное лицо*</span>
       <%= text_field_tag :contact_person %>
-      
+
       <span>Требуемый сервис*</span>
       <ul>
         <li>

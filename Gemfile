@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'mail'
+
 gem 'rails', '3.2.14'
 
 group :development, :test do

@@ -8,6 +8,7 @@ Gsc::Application.routes.draw do
   get '/' => "application#index"
   get '/price_request' => "application#price_request"
   post '/price_request' => "application#price_request_post"
+  post '/contacts' => "application#contacts"
   mount Refinery::Core::Engine, :at => '/'
 
   # The priority is based upon order of creation:
