@@ -30,7 +30,7 @@ class ApplicationController < ActionController::Base
     mail["to"] = "gsc.service.bot@gmail.com"
     puts mail.deliver
 
-    redirect_to :price_request, :notice => :success
+    redirect_to "/contacts"
   end
 
   def form_text params
