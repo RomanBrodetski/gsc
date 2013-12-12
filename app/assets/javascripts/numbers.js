@@ -3,7 +3,7 @@ $(function() {
     $('.number').text('0');
     var done = false;
     $(document).scroll(function() {
-        if (!done && $(document).scrollTop() >= 260) {
+        if (!done && $(document).scrollTop() >= 230) {
           done = true
             $('.number').each(function(_,elem){
                 var max = parseInt($(elem).data('max'))
