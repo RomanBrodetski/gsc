@@ -38,9 +38,9 @@
       }
     );
 
-    $('.cabinet').appendTo($('.last'))
+    $('.cabinet').appendTo($('.menu > ul > li.last'))
 
-    $('.last').hover(
+    $('.menu > ul > li.last').hover(
       function(){
         $('.cabinet').stop(true, true);
         $('.cabinet').slideDown('menium');
@@ -52,4 +52,8 @@
 
       }
     )
+
+    $('a[href="/lc"]').on('click', function(){
+      return false;
+    })
   });
