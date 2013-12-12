@@ -20,3 +20,11 @@
   </li>
   </ul>
 </div>
+
+<div class="cabinet">
+  <%= form_tag price_request_path, :class => "cabinet-form form", :id => "cabinet" do %>
+    <%= text_field_tag :id, 'Ваш ID' %>
+    <%= text_field_tag :password, 'Пароль' %>
+    <%= submit_tag 'Войти', :class => "cabinet-enter" %>
+  <% end %>
+</div>

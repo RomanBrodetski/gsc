@@ -69,6 +69,36 @@ html, body, #page_container {
 
 body #page { height: auto; min-height: 100%; }
 
+.cabinet {
+  line-height: 30px;
+  position: absolute;
+  right: 50%;
+  margin-right: -480px;
+  width: 480px;
+  background-color: rgba(5,48,71, 0.7);
+  background-color: rgb(5,48,71)\9;
+  padding: 20px;
+  input {
+    border: none;
+    background: white;
+    height: 30px;
+    margin-right: 20px;
+    padding: 0px 10px;
+    display: inline-block;
+    width: 150px;
+    background: white;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .cabinet-enter {
+    display: inline-block;
+    width: 85px;
+    background-color: rgb(5,48,71);
+    color: white;
+  }
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -246,6 +276,11 @@ body #page { height: auto; min-height: 100%; }
   }
   // .content {margin: 50px auto;}
 
+  .form-confirmation {
+    text-align: center;
+    padding: 20px 0;
+    color: #414141;
+  }
   .form {
     color: $green;
     ul {
@@ -256,15 +291,55 @@ body #page { height: auto; min-height: 100%; }
       label {
         color: #414141;
       }
+      select {
+        display: block;
+        width: 100%;
+        background: white;
+        border: none;
+      }
+      //rewrite plugin style
+
+      .selectize-input.items.not-full.has-options, .selectize-input.items.has-options.full.has-items{
+        padding: 5px 8px;
+        min-height: 25px;
+        height:  29px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-radius: 0;
+        box-shadow: none;
+        vertical-align: baseline;
+      }
+      .selectize-dropdown [data-selectable] {
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
+      .selectize-dropdown-content {
+        padding: 0;
+        border: 0;
+      }
+      .selectize-dropdown {
+        box-shadow: none;
+      }
+      .selectize-control {
+        margin-top: 10px;
+        input {
+          height: auto;
+        }
+      }
+
       input {
         display: block;
         width: 100%;
         background: #E0E0E0;
-        height: 25px;
+        height: 29px;
         border: none;
         border-bottom: 1px solid white;
         border-top: 1px solid #c0c0c0;
         margin: 10px 0 20px;
+        padding: 4px 8px;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
 
         &[type='checkbox'] {
           display: none;
@@ -314,6 +389,10 @@ body #page { height: auto; min-height: 100%; }
         cursor: pointer;
       }
     }
+  .arrow {
+    background: url("arrow--green.png") no-repeat center left;
+    padding-left: 20px;
+  }
   .form-extra-text {
     vertical-align: bottom;
   }
@@ -474,13 +553,13 @@ body #page { height: auto; min-height: 100%; }
         }
       }
       ul.list1 {
-        width: 150px;
+        width: 160px;
       }
       ul.list2 {
         width: 200px;
       }
       ul.list3 {
-        width: 200px;
+        width: 190px;
       }
       ul.list4 {
         width: 120px;
