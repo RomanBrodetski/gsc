@@ -18,8 +18,6 @@
     // $('.menu ul ul').hide()
 
   $(document).ready(function () {
-
-  
     $("#menu a + ul > li").has("ul").addClass("has-menu-right");
     $("#menu > ul > li").has("ul").addClass("has-menu");
 
@@ -32,11 +30,26 @@
         $(this).addClass('select_link');
         $(this).children('ul ul a + ul').css("left", $(this).width());
         $(this).children('ul').slideDown('medium');
-      }, 
+      },
       function () {
         $('ul').stop(true, true)
         $(this).children('ul').slideUp('medium');
         $(this).removeClass('select_link')
       }
     );
+
+    $('.cabinet').appendTo($('.last'))
+
+    $('.last').hover(
+      function(){
+        $('.cabinet').stop(true, true);
+        $('.cabinet').slideDown('menium');
+
+      },
+      function(){
+        $('.cabinet').stop(true, true);
+        $('.cabinet').slideUp('menium');
+
+      }
+    )
   });

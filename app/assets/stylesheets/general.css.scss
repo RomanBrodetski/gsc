@@ -70,6 +70,7 @@ html, body, #page_container {
 body #page { height: auto; min-height: 100%; }
 
 .cabinet {
+  display: none;
   line-height: 30px;
   position: absolute;
   right: 50%;
