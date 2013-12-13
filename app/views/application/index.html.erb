@@ -2,7 +2,7 @@
 <section id="body">
 <div id="slider">
 <ul class="bxslider">
-  <%- Refinery::Sliders::Slider.all.each do |slider| %>
+  <%- Refinery::Sliders::Slider.all.sort_by(&:position).each do |slider| %>
 <li>
 <%= slider.image.html_safe %>
   <div class="container_12 slider-content">
