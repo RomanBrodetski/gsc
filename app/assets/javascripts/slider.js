@@ -13,7 +13,7 @@ $(document).ready(function(){
   $('.bxslider').bxSlider({
     speed: 1000,
     auto: true,
-    pause: 6000
+    pause: 6000,
     autoDelay: 1000
   });
 
