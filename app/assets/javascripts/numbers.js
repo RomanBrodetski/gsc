@@ -23,6 +23,19 @@ $(function() {
         }
     });
   }
+
+
+  $('#stavka input[type=submit]').on('click',function(){
+    if ($("input[type=checkbox]:checked").length > 0)
+    {
+      return true;
+    }
+    else
+    {
+      alert('Выберите хотя бы один из сервисов')
+      return false;
+    }
+  })
 });
 
 

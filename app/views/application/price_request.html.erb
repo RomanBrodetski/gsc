@@ -10,7 +10,8 @@
   Спасибо, ваше сообщение отправлено!
   </div>
 <% end %>
-  <h2>Запрос ставки онлайн</h2>
+  <!-- <h2>Запрос ставки онлайн</h2> -->
+  <br />
 
   <%= form_tag price_request_path, :class => "form", :id => "stavka" do %>
 
@@ -79,7 +80,7 @@
       </div>
       <div class="grid_3">
         <span>Вес груза</span>
-        <%= number_field_tag :extra %>
+        <%= text_field_tag :extra %>
       </div>
     </div>
 
@@ -88,7 +89,4 @@
     </div>
 
   <% end %>
-
-
-
 </div>
