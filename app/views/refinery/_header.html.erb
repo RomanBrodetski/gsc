@@ -7,7 +7,7 @@
 <div class="lang">
   <ul>
   <li>
-    <%= link_to "РУ", {:locale => :ru}, :class => (params[:locale] == "ru" ? 'selected' : nil ) %>
+    <%= link_to "РУ", {:locale => :ru}, :class => (params[:locale].nil? || params[:locale] == "ru" ? 'selected' : nil ) %>
     </li>
   <li>
     <%= link_to "EN", {:locale => :en}, :class => (params[:locale] == "en" ? 'selected' : nil) %>
