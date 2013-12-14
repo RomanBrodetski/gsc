@@ -7,16 +7,16 @@
 <div class="lang">
   <ul>
   <li>
-    <%= link_to "РУ", {:locale => :ru}, :class => (params[:locale].nil? || params[:locale] == "ru" ? 'selected' : nil ) %>
+    <%= link_to "РУ", {:locale => :ru}, :class => (params[:locale].nil? || params[:locale].to_s == "ru" ? 'selected' : nil ) %>
     </li>
   <li>
-    <%= link_to "EN", {:locale => :en}, :class => (params[:locale] == "en" ? 'selected' : nil) %>
+    <%= link_to "EN", {:locale => :en}, :class => (params[:locale].to_s == "en" ? 'selected' : nil) %>
   </li>
   <li>
-    <%= link_to "ES", {:locale => :es}, :class => (params[:locale] == "es" ? 'selected' : nil) %>
+    <%= link_to "ES", {:locale => :es}, :class => (params[:locale].to_s == "es" ? 'selected' : nil) %>
   </li>
   <li>
-    <%= link_to "中文", {:locale => :zh}, :class => (params[:locale] == "zh" ? 'selected' : nil) %>
+    <%= link_to "中文", {:locale => :zh}, :class => (params[:locale].to_s == "zh" ? 'selected' : nil) %>
   </li>
   </ul>
 </div>
