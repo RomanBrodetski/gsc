@@ -91,18 +91,22 @@
 .slider-space {
   /*height: 440px;*/
 }
+
+@media (max-width: 1366px) {
+  #slider {
+    max-height: 400px;
+  }
+  .bx-viewport {
+    max-height: 400px;
+  }
+}
+
+
 #slider {
   position: relative;
   display: block;
   width: 100%;
   overflow: hidden;
-  max-height: 400px;
-  /*height: 440px;*/
-  /*margin-bottom: 60px;*/
-  /*background: url("slider.png") center;*/
-  .bx-viewport {
-    max-height: 400px;
-  }
   .bx-wrapper .bx-controls-direction a {
     margin-top: -10px;
   }
