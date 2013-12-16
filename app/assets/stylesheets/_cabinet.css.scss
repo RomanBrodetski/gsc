@@ -1,0 +1,30 @@
+.cabinet {
+  display: none;
+  line-height: 30px;
+  position: absolute;
+  right: 50%;
+  margin-right: -480px;
+  width: 480px;
+  background-color: rgba(5,48,71, 0.7);
+  background-color: rgb(5,48,71)\9;
+  padding: 20px;
+  input {
+    border: none;
+    background: white;
+    height: 30px;
+    margin-right: 20px;
+    padding: 0px 10px;
+    display: inline-block;
+    width: 150px;
+    background: white;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .cabinet-enter {
+    display: inline-block;
+    width: 85px;
+    background-color: rgb(5,48,71);
+    color: white;
+  }
+}

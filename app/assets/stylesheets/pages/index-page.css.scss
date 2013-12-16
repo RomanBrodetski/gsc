@@ -49,33 +49,33 @@
         }
       }
       .img1 {
-        background-image: url("ship.png");
+        background-image: url("../ship.png");
         &:hover {
-          background-image: url("ship_active.png");
+          background-image: url("../ship_active.png");
         };
       }
       .img2 {
-        background-image: url("customs.png");
+        background-image: url("../customs.png");
         &:hover {
-          background-image: url("customs_hover.png");
+          background-image: url("../customs_hover.png");
         };
       }
       .img3 {
-        background-image: url("auto_rail.png");
+        background-image: url("../auto_rail.png");
         &:hover {
-          background-image: url("auto_rail_hover.png");
+          background-image: url("../auto_rail_hover.png");
         };
       }
       .img4 {
-        background-image: url("warehouse.png");
+        background-image: url("../warehouse.png");
         &:hover {
-          background-image: url("warehouse_hover.png");
+          background-image: url("../warehouse_hover.png");
         };
       }
       .img5 {
-        background-image: url("big_truck.png");
+        background-image: url("../big_truck.png");
         &:hover {
-          background-image: url("big_truck_hover.png");
+          background-image: url("../big_truck_hover.png");
         };
       }
     }
@@ -190,7 +190,7 @@
 #time {
   width: 100%;
   padding-top: 50px;
-  background: url("bg-time.png") center no-repeat;
+  background: url("../bg-time.png") center no-repeat;
   height: 320px;
   .zone-clock {
     list-style: none;

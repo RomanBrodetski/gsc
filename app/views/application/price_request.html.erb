@@ -4,89 +4,91 @@
     Запрос ставки онлайн
   </h1>
 </section>
-<div class="container_12">
-<% if flash[:notice] %>
-  <div class="form-confirmation">
-  Спасибо, ваше сообщение отправлено!
-  </div>
-<% end %>
-  <!-- <h2>Запрос ставки онлайн</h2> -->
-  <br />
-
-  <%= form_tag price_request_path, :class => "form", :id => "stavka" do %>
-
-    <div class="container_12">
-    <div class="grid_4">
-      <span>Контактное лицо*</span>
-      <%= text_field_tag :contact_person, nil, :required => true %>
-
-      <span>Требуемый сервис*</span>
-      <ul>
-        <li>
-          <%= check_box_tag :by_sea %><%= label_tag 'by_sea' do %><span></span>Морская контейнерная перевозка<% end %>
-        </li>
-        <li>
-          <%= check_box_tag :custom %><%= label_tag 'custom' do %><span></span>Таможенное оформление<% end %>
-        </li>
-        <li>
-          <%= check_box_tag :by_car_or_train %><%= label_tag 'by_car_or_train' do %><span></span>Автомобильная или ж/д перевозка<% end %>
-        </li>
-        <li>
-          <%= check_box_tag :storage %><%= label_tag 'storage' do %><span></span>Терминальные и складские операции<% end %>
-        </li>
-        <li>
-          <%= check_box_tag :oversize %><%= label_tag 'oversize' do %><span></span>Перевозка негабаритных и проектных грузов<% end %>
-        </li>
-      </ul>
+<section id="body">
+  <div class="container_12">
+  <% if flash[:notice] %>
+    <div class="form-confirmation">
+    Спасибо, ваше сообщение отправлено!
     </div>
+  <% end %>
+    <!-- <h2>Запрос ставки онлайн</h2> -->
+    <br />
 
-    <div class="grid_4">
-      <span>E-mail*</span>
-      <%= email_field_tag :mail, nil, :required => true %>
-    </div>
-    <div class="grid_4">
-      <span>Телефон</span>
-      <%= telephone_field_tag :phone %>
-    </div>
+    <%= form_tag price_request_path, :class => "form", :id => "stavka" do %>
 
-    <div class="grid_4">
-      <span>Пункт отправления</span>
-      <%= text_field_tag :mail %>
-    </div>
-    <div class="grid_4">
-      <span class="arrow">Пункт назначения</span>
-      <%= text_field_tag :phone %>
-    </div>
+      <div class="container_12">
+      <div class="grid_4">
+        <span>Контактное лицо*</span>
+        <%= text_field_tag :contact_person, nil, :required => true %>
 
-    <div class="grid_5 ">
-      <span>Тип контейнера</span>
-      <%= select_tag :type, options_for_select(['', '20-ти футовый (20’ DV)', '20-ти футовый (20’ HT)', '40-ка футовый (40’ DV)', '40-ка футовый высокий (20’ HC)', 'Рефрижераторный 20-ти футовый (20’ RC)', 'Рефрижераторный 40-ка футовый высокий (40’ RH)']), :placeholder => "Выберите тип контейнера"%>
-    </div>
+        <span>Требуемый сервис*</span>
+        <ul>
+          <li>
+            <%= check_box_tag :by_sea %><%= label_tag 'by_sea' do %><span></span>Морская контейнерная перевозка<% end %>
+          </li>
+          <li>
+            <%= check_box_tag :custom %><%= label_tag 'custom' do %><span></span>Таможенное оформление<% end %>
+          </li>
+          <li>
+            <%= check_box_tag :by_car_or_train %><%= label_tag 'by_car_or_train' do %><span></span>Автомобильная или ж/д перевозка<% end %>
+          </li>
+          <li>
+            <%= check_box_tag :storage %><%= label_tag 'storage' do %><span></span>Терминальные и складские операции<% end %>
+          </li>
+          <li>
+            <%= check_box_tag :oversize %><%= label_tag 'oversize' do %><span></span>Перевозка негабаритных и проектных грузов<% end %>
+          </li>
+        </ul>
+      </div>
 
-    <div class="grid_3">
-      <span>Груз</span>
-      <%= text_field_tag :cargo %>
-    </div>
-    </div>
-
-    <div class="container_12">
-      <div class="grid_5">
-        <span>Дополнительно</span>
-        <%= text_field_tag :extra %>
+      <div class="grid_4">
+        <span>E-mail*</span>
+        <%= email_field_tag :mail, nil, :required => true %>
       </div>
       <div class="grid_4">
-        <span>Код ТНВЭД</span>
-        <%= text_field_tag :tnved %>
+        <span>Телефон</span>
+        <%= telephone_field_tag :phone %>
       </div>
+
+      <div class="grid_4">
+        <span>Пункт отправления</span>
+        <%= text_field_tag :mail %>
+      </div>
+      <div class="grid_4">
+        <span class="arrow">Пункт назначения</span>
+        <%= text_field_tag :phone %>
+      </div>
+
+      <div class="grid_5 ">
+        <span>Тип контейнера</span>
+        <%= select_tag :type, options_for_select(['', '20-ти футовый (20’ DV)', '20-ти футовый (20’ HT)', '40-ка футовый (40’ DV)', '40-ка футовый высокий (20’ HC)', 'Рефрижераторный 20-ти футовый (20’ RC)', 'Рефрижераторный 40-ка футовый высокий (40’ RH)']), :placeholder => "Выберите тип контейнера"%>
+      </div>
+
       <div class="grid_3">
-        <span>Вес груза</span>
-        <%= text_field_tag :extra %>
+        <span>Груз</span>
+        <%= text_field_tag :cargo %>
       </div>
-    </div>
+      </div>
 
-    <div class="grid_8">
-      <%= submit_tag 'Запросить ставку' %><span class="form-extra-text">* - поля обязательные для заполнения.</span>
-    </div>
+      <div class="container_12">
+        <div class="grid_5">
+          <span>Дополнительно</span>
+          <%= text_field_tag :extra %>
+        </div>
+        <div class="grid_4">
+          <span>Код ТНВЭД</span>
+          <%= text_field_tag :tnved %>
+        </div>
+        <div class="grid_3">
+          <span>Вес груза</span>
+          <%= text_field_tag :extra %>
+        </div>
+      </div>
 
-  <% end %>
-</div>
+      <div class="grid_8">
+        <%= submit_tag 'Запросить ставку' %><span class="form-extra-text">* - поля обязательные для заполнения.</span>
+      </div>
+
+    <% end %>
+  </div>
+</section>
