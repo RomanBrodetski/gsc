@@ -1,7 +1,7 @@
 @import 'variables';
 
 #stavka {
-  min-height: 600px
+  padding-top: 30px;
 }
 // .content {margin: 50px auto;}
 
@@ -12,6 +12,9 @@
 }
 .form {
   color: $green;
+  .form-title {
+    color: #003e5e;
+  }
   ul {
     list-style-type: none;
     margin: 10px 0;
@@ -132,4 +135,5 @@
 }
 .form-extra-text {
   vertical-align: bottom;
+  color: #414141;
 }

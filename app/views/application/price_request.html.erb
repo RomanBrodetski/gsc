@@ -18,10 +18,10 @@
 
       <div class="container_12">
       <div class="grid_4">
-        <span>Контактное лицо*</span>
+        <span class="form-title">Контактное лицо*</span>
         <%= text_field_tag :contact_person, nil, :required => true %>
 
-        <span>Требуемый сервис*</span>
+        <span class="form-title">Требуемый сервис*</span>
         <ul>
           <li>
             <%= check_box_tag :by_sea %><%= label_tag 'by_sea' do %><span class="check-box__pic"></span><span class="check-box__text">Морская контейнерная перевозка</span><% end %>
@@ -42,45 +42,45 @@
       </div>
 
       <div class="grid_4">
-        <span>E-mail*</span>
+        <span class="form-title">E-mail*</span>
         <%= email_field_tag :mail, nil, :required => true %>
       </div>
       <div class="grid_4">
-        <span>Телефон</span>
+        <span class="form-title">Телефон</span>
         <%= telephone_field_tag :phone %>
       </div>
 
       <div class="grid_4">
-        <span>Пункт отправления</span>
+        <span class="form-title">Пункт отправления</span>
         <%= text_field_tag :mail %>
       </div>
       <div class="grid_4">
-        <span class="arrow">Пункт назначения</span>
+        <span class="form-title">Пункт назначения</span>
         <%= text_field_tag :phone %>
       </div>
 
       <div class="grid_5 ">
-        <span>Тип контейнера</span>
+        <span class="form-title">Тип контейнера</span>
         <%= select_tag :type, options_for_select(['', '20-ти футовый (20’ DV)', '20-ти футовый (20’ HT)', '40-ка футовый (40’ DV)', '40-ка футовый высокий (20’ HC)', 'Рефрижераторный 20-ти футовый (20’ RC)', 'Рефрижераторный 40-ка футовый высокий (40’ RH)']), :placeholder => "Выберите тип контейнера"%>
       </div>
 
       <div class="grid_3">
-        <span>Груз</span>
+        <span class="form-title">Груз</span>
         <%= text_field_tag :cargo %>
       </div>
       </div>
 
       <div class="container_12">
         <div class="grid_5">
-          <span>Дополнительно</span>
+          <span class="form-title">Дополнительно</span>
           <%= text_field_tag :extra %>
         </div>
         <div class="grid_4">
-          <span>Код ТНВЭД</span>
+          <span class="form-title">Код ТНВЭД</span>
           <%= text_field_tag :tnved %>
         </div>
         <div class="grid_3">
-          <span>Вес груза</span>
+          <span class="form-title">Вес груза</span>
           <%= text_field_tag :extra %>
         </div>
       </div>
