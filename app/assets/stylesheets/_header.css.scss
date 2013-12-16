@@ -89,6 +89,10 @@
           }
         }
 
+        &.selected > a {
+          color: $link;
+        }
+
         &.selected.has-menu > a {
           color: $link;
           background: url("arr-down-bl.png") no-repeat center right;
