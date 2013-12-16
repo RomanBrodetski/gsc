@@ -1,8 +1,11 @@
 @import 'variables';
 
 #contacts {
-  h2 {margin-top: 40px;
-      font-size: 1.2em}
+  margin-top: -40px;
+  h2 {
+    margin-top: 40px;
+    font-size: 1.2em
+  }
   .contacts {
     margin-bottom: 60px;
   }
