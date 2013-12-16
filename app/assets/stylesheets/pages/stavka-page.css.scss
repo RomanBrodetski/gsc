@@ -73,7 +73,12 @@
 
       &[type='checkbox'] {
         display: none;
-        + label span {
+        + label .check-box__text {
+          display: inline-block;
+          width: 250px;
+          vertical-align: top;
+        }
+        + label .check-box__pic {
           display: inline-block;
           width: 14px;
           height: 14px;
@@ -81,10 +86,12 @@
           vertical-align: middle;
           background: url("../checkbox.png") no-repeat;
         }
-        &:checked + label span {
+        &:checked + label .check-box__pic {
           background: url("../checkbox--checked.png") no-repeat;
         }
+
       }
+
 
       &[type='submit'] {
         background: $green;
