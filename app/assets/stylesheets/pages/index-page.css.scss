@@ -25,7 +25,7 @@
     text-align: center;
     li {
       display: inline-block;
-      width: 100px;
+      width: 103px;
       padding: 0 40px;
       vertical-align: top;
       text-align: center;
@@ -35,16 +35,17 @@
       }
       em {
         display: block;
-        height: 100px;
-        width: 100px;
+        height: 103px;
+        width: 103px;
         background-color: $grey;
         background-color: #f0f0f0\9;
         background-repeat: no-repeat;
         background-position: center;
-        border-radius: 100px;
+        border-radius: 103px;
         margin-bottom: 15px;
         &:hover {
           background-color: $blue;
+          background-color: #f0f0f0\9;
         }
       }
       .img1 {
