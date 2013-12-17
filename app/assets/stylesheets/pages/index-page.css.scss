@@ -74,6 +74,7 @@
       }
       .img5 {
         background-image: url("/assets/big_truck.png");
+        background-position-x: 1px;
         &:hover {
           background-image: url("/assets/big_truck_hover.png");
         };
