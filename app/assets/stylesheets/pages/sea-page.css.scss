@@ -3,7 +3,7 @@
 .content {
 }
 .interactive-map {
-  background: url("../sea_parallax.jpg") no-repeat;
+  background: url("/assets/sea_parallax.jpg") no-repeat;
   color: white;
   height: 400px;
   margin: 60px auto 30px;
@@ -16,12 +16,12 @@
     li {
       padding-left: 30px;
       list-style: none;
-      background: url("../list-item.png") no-repeat left center;
+      background: url("/assets/list-item.png") no-repeat left center;
       line-height: 30px;
     }
   }
   .interactive-map__map {
-    background: url("../interactive-map.png") no-repeat right 60px;
+    background: url("/assets/interactive-map.png") no-repeat right 60px;
     height: 100%;
   }
 }
@@ -59,7 +59,7 @@
   }
   .rus-map_pic {
     height: 306px;
-    background: url("../rus-sea.png") no-repeat center;
+    background: url("/assets/rus-sea.png") no-repeat center;
   }
   .title-outline {
     text-align: center;
@@ -92,7 +92,7 @@
   position: relative;
   margin: 100px auto 40px;
   height: 150px;
-  background: url('../pattern.png') repeat-x;
+  background: url('/assets/pattern.png') repeat-x;
   .counter_box {
     width: 800px;
     height: 80px;

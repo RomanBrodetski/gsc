@@ -87,10 +87,10 @@
           height: 14px;
           margin: -2px 8px 0 0;
           vertical-align: middle;
-          background: url("../checkbox.png") no-repeat;
+          background: url("/assets/checkbox.png") no-repeat;
         }
         &:checked + label .check-box__pic {
-          background: url("../checkbox--checked.png") no-repeat;
+          background: url("/assets/checkbox--checked.png") no-repeat;
         }
 
       }
@@ -131,7 +131,7 @@
     }
   }
 .arrow {
-  background: url("../arrow--green.png") no-repeat center left;
+  background: url("/assets/arrow--green.png") no-repeat center left;
   padding-left: 20px;
 }
 .form-extra-text {
