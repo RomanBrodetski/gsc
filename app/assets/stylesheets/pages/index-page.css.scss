@@ -48,33 +48,33 @@
         }
       }
       .img1 {
-        background-image: url("../ship.png");
+        background-image: url("/assets/ship.png");
         &:hover {
-          background-image: url("../ship_active.png");
+          background-image: url("/assets/ship_active.png");
         };
       }
       .img2 {
-        background-image: url("../customs.png");
+        background-image: url("/assets/customs.png");
         &:hover {
-          background-image: url("../customs_hover.png");
+          background-image: url("/assets/customs_hover.png");
         };
       }
       .img3 {
-        background-image: url("../auto_rail.png");
+        background-image: url("/assets/auto_rail.png");
         &:hover {
-          background-image: url("../auto_rail_hover.png");
+          background-image: url("/assets/auto_rail_hover.png");
         };
       }
       .img4 {
-        background-image: url("../warehouse.png");
+        background-image: url("/assets/warehouse.png");
         &:hover {
-          background-image: url("../warehouse_hover.png");
+          background-image: url("/assets/warehouse_hover.png");
         };
       }
       .img5 {
-        background-image: url("../big_truck.png");
+        background-image: url("/assets/big_truck.png");
         &:hover {
-          background-image: url("../big_truck_hover.png");
+          background-image: url("/assets/big_truck_hover.png");
         };
       }
     }
