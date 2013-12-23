@@ -2,8 +2,6 @@
 
 
 #index #body {
-  margin: 0 auto;
-  margin-bottom: -80px;
   .title-outline {
     text-align: center;
     border: 1px solid $title;
@@ -49,33 +47,47 @@
         }
       }
       .img1 {
-        background-image: url("ship.png");
+        background-image: url("/assets/ship.png");
+        background-image: url("/assets/ie8/ship.png")\9;
         &:hover {
-          background-image: url("ship_active.png");
+          background-image: url("/assets/ship_active.png");
+          background-image: url("/assets/ship_hover.png")\9;
         };
       }
       .img2 {
-        background-image: url("customs.png");
+        background-image: url("/assets/customs.png");
+        background-image: url("/assets/ie8/customs.png")\9;
         &:hover {
-          background-image: url("customs_hover.png");
+          background-image: url("/assets/customs_hover.png");
+          background-image: url("/assets/ie8/customs_hover.png")\9;
         };
       }
       .img3 {
-        background-image: url("auto_rail.png");
+        background-image: url("/assets/auto_rail.png");
+        background-image: url("/assets/ie8/auto_rail.png")\9;
         &:hover {
-          background-image: url("auto_rail_hover.png");
+          background-image: url("/assets/auto_rail_hover.png");
+          background-image: url("/assets/ie8/auto_rail_hover.png")\9;
         };
       }
       .img4 {
-        background-image: url("warehouse.png");
+        background-image: url("/assets/warehouse.png");
+        background-image: url("/assets/ie8/warehouse.png")\9;
+        background-position-x: 4px;
+        background-position-x: 0px\9;
         &:hover {
-          background-image: url("warehouse_hover.png");
+          background-image: url("/assets/warehouse_hover.png");
+          background-image: url("/assets/ie8/warehouse_hover.png")\9;
         };
       }
       .img5 {
-        background-image: url("big_truck.png");
+        background-image: url("/assets/big_truck.png");
+        background-image: url("/assets/ie8/big_truck.png")\9;
+        background-position-x: 1px;
+        background-position-x: 0px\9;
         &:hover {
-          background-image: url("big_truck_hover.png");
+          background-image: url("/assets/big_truck_hover.png");
+          background-image: url("/assets/ie8/big_truck_hover.png")\9;
         };
       }
     }
@@ -91,15 +103,25 @@
 .slider-space {
   /*height: 440px;*/
 }
+
+@media (max-width: 1366px) {
+  #slider {
+    max-height: 400px;
+  }
+  .bx-viewport {
+    max-height: 400px;
+  }
+}
+
+
 #slider {
   position: relative;
   display: block;
   width: 100%;
   overflow: hidden;
-  max-height: 600px;
-  /*height: 440px;*/
-  /*margin-bottom: 60px;*/
-  /*background: url("slider.png") center;*/
+  .bx-wrapper .bx-controls-direction a {
+    margin-top: -10px;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -116,6 +138,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: -50px;
     margin-left: -480px;
     .slider-title {
       background-color: rgba(41,141,44, 0.7);
@@ -177,9 +200,11 @@
 
 
 #time {
+  display: none\9;
+  margin-bottom: -60px;
   width: 100%;
   padding-top: 50px;
-  background: url("bg-time.png") center no-repeat;
+  background: url("/assets/bg-time.png") center no-repeat;
   height: 320px;
   .zone-clock {
     list-style: none;

@@ -1,0 +1,23 @@
+.accordion {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #C8C8C8;
+  dt {
+    cursor: pointer;
+    line-height: 21px;
+    padding-left: 30px;
+    background: url("/assets/plus.png") left center no-repeat;
+    &:hover {
+      color: #073D5C;
+      background: url("/assests/plus-hover.png") left center no-repeat;
+    }
+  }
+  dt.opened, dt.opened:hover {
+    background: url("/assests/minus.png") left center no-repeat;
+  }
+  dd {
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+}

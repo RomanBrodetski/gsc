@@ -1,0 +1,140 @@
+@import 'variables';
+
+#stavka {
+
+}
+// .content {margin: 50px auto;}
+
+.form-confirmation {
+  text-align: center;
+  padding: 20px 0;
+  color: #414141;
+}
+.form {
+  color: $green;
+  .form-title {
+    color: #003e5e;
+  }
+  ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+  }
+    label {
+      color: #414141;
+    }
+    select {
+      display: block;
+      width: 100%;
+      background: white;
+      border: none;
+    }
+
+    //rewrite plugin style
+
+    .selectize-input.items.not-full.has-options, .selectize-input.items.has-options.full.has-items{
+      padding: 5px 8px;
+      min-height: 25px;
+      height:  29px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-radius: 0;
+      box-shadow: none;
+      vertical-align: baseline;
+    }
+    .selectize-dropdown [data-selectable] {
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+    .selectize-dropdown-content {
+      padding: 0;
+      border: 0;
+    }
+    .selectize-dropdown {
+      box-shadow: none;
+    }
+    .selectize-control {
+      margin-top: 10px;
+      input {
+        height: auto;
+      }
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      background: #E0E0E0;
+      height: 29px;
+      border: none;
+      border-bottom: 1px solid white;
+      border-top: 1px solid #c0c0c0;
+      margin: 10px 0 20px;
+      padding: 4px 8px;
+      box-sizing:border-box;
+      -moz-box-sizing:border-box; /* Firefox */
+
+      &[type='checkbox'] {
+        display: none;
+        + label .check-box__text {
+          display: inline-block;
+          width: 250px;
+          vertical-align: top;
+        }
+        + label .check-box__pic {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          margin: -2px 8px 0 0;
+          vertical-align: middle;
+          background: url("/assets/checkbox.png") no-repeat;
+        }
+        &:checked + label .check-box__pic {
+          background: url("/assets/checkbox--checked.png") no-repeat;
+        }
+
+      }
+
+
+      &[type='submit'] {
+        background: $green;
+        display: inline-block;
+        border: none;
+        color: white;
+        font-size: 12px;
+        height: 30px;
+        width: 200px;
+        margin: 0;
+        margin-right: 30px;
+        cursor: pointer;
+      }
+    }
+    textarea {
+      display: block;
+      resize: both;
+      min-height: 85px;
+      width: 100%;
+      max-height: 200px;
+      border: none;
+      border-bottom: 1px solid white;
+      border-top: 1px solid #c0c0c0;
+      background: #E0E0E0;
+      margin: 10px 0 20px;
+    }
+    button {
+      border: none;
+      padding: 10px 15px;
+      color: white;
+      background: green;
+      font-size: .9em;
+      cursor: pointer;
+    }
+  }
+.arrow {
+  background: url("/assets/arrow--green.png") no-repeat center left;
+  padding-left: 20px;
+}
+.form-extra-text {
+  vertical-align: bottom;
+  color: #414141;
+}

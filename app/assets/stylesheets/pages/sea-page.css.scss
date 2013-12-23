@@ -1,0 +1,189 @@
+@import 'variables';
+
+.content {
+}
+.interactive-map {
+  background: url("/assets/sea_parallax.jpg") no-repeat;
+  color: white;
+  height: 400px;
+  margin: 60px auto 30px;
+  h2 {
+    margin-top: 100px;
+    color: white;
+  }
+  ul {
+    padding: 0;
+    li {
+      padding-left: 30px;
+      list-style: none;
+      background: url("/assets/list-item.png") no-repeat left center;
+      line-height: 30px;
+    }
+  }
+  .interactive-map__map {
+    background: url("/assets/interactive-map.png") no-repeat right 60px;
+    height: 100%;
+  }
+}
+
+.rus-map {
+  .rus-map_lists {
+    height: 60px;
+    border-left: 1px solid $green;
+    border-right: 1px solid $green;
+    ul {
+      margin: 10px 0;
+      padding-left: 30px;
+      float: left;
+      li {
+        /*list-style-image: url("liststyle.png");
+        list-style-position: inside;*/
+      }
+    }
+    ul.list1 {
+      width: 160px;
+    }
+    ul.list2 {
+      width: 200px;
+    }
+    ul.list3 {
+      width: 190px;
+    }
+    ul.list4 {
+      width: 120px;
+    }
+    ul.list5 {
+      width: 130px;
+    }
+
+  }
+  .rus-map_pic {
+    height: 306px;
+    background: url("/assets/rus-sea.png") no-repeat center;
+  }
+  .title-outline {
+    text-align: center;
+    border: 1px solid $title;
+    border-bottom: none;
+    height: 20px;
+    margin-top: 20px;
+    h3.title {
+      position: relative;
+      font-weight: normal;
+      top: -10px;
+      display: inline-block;
+      margin: 0;
+      padding: 0 10px;
+      color: $title;
+      background: $page;
+      text-transform: none;
+    }
+  }
+  .title-outline.bottom {
+    border: 1px solid $title;
+    border-top: none;
+    margin-top: 0;
+    h3.title {
+      top: 10px;
+    }
+  }
+}
+.counter {
+  position: relative;
+  margin: 100px auto 40px;
+  height: 150px;
+  background: url('/assets/pattern.png') repeat-x;
+  .counter_box {
+    width: 800px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    margin-top: -43px;
+    left: 50%;
+    margin-left: -400px;
+    background: white;
+    border: 3px solid #062A42;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #062A42;
+    ul {
+      display: inline;
+      padding: 0;
+      margin: 0 20px;
+      li {
+        background: black;
+        border-radius: 5px;
+        color: white;
+        font-size: 35px;
+        display: inline;
+        list-style: none;
+        padding: 5px 7px;
+        position: relative;
+        .counter__line {
+          position: absolute;
+          display: block;
+          width: 32px;
+          height: 1px;
+          top: 24px;
+          left: 0;
+          border: 1px solid black;
+          background: #3C3C3C;
+        }
+      }
+    }
+  }
+}
+.types {
+  color: #585858;
+  a {
+    vertical-align: 3px;
+    font-size: 14px;
+    text-transform: none;
+    background: green;
+    color: white;
+    padding: 7px 15px;
+    margin-left: 30px;
+    border-radius: 5px;
+    line-height: 1.4em;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  img {
+    margin-right: 30px;
+  }
+  h3 {
+    margin-top: 30px;
+  }
+  .tables {
+    margin-top: 20px;
+    table {
+      margin-right: 30px;
+      display: inline-block;
+      border-spacing:0;
+      border-collapse: collapse;
+      th {
+        background: #585858;
+        color: $grey;
+        font-weight: normal;
+      }
+      tr {
+        background: #EBEBEB;
+        border: none;
+        td, th {
+          padding: 3px 10px;
+        }
+      }
+      tr:nth-child(2n) {
+        background: #E0E0E0;
+      }
+    }
+    .tables_special td {
+      height: 68px;
+      text-align: center;
+    }
+  }
+}
