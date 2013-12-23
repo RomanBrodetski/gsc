@@ -14,7 +14,14 @@ $(document).ready(function(){
     speed: 1300,
     auto: true,
     pause: 6000,
-    autoDelay: 1000
+    autoDelay: 1000,
+  });
+  $('.bxslider1').bxSlider({
+    speed: 1300,
+    auto: true,
+    pause: 6000,
+    autoDelay: 1000,
+    mode: 'fade'
   });
 
 });

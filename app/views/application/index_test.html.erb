@@ -1,0 +1,95 @@
+<div id="index">
+<section id="body">
+<div id="slider">
+<ul class="bxslider1">
+  <%- Refinery::Sliders::Slider.all.sort_by(&:position).each do |slider| %>
+<li>
+<%= slider.image.html_safe %>
+  <div class="container_12 slider-content">
+  <div class="slider-title"><h2><%= slider.headline %></h2>
+  </div>
+  <div class="slider-text"><p><%= slider.title %></p>
+  </div>
+</div>
+</li>
+<%end%>
+</ul>
+</div>
+<div class="slider-space"></div>
+<div class="body">
+<div class="container_12 activity">
+<div class="title-outline"><h3 class="title">Сферы деятельности</h3>
+</div>
+<ul class="index-list">
+<li><a href="/services/containers"><em class="img1"></em>Морские контейнерные перевозки</a>
+</li>
+<li><a href="/services/customs_clearance"><em class="img2"></em>Таможенное оформление</a>
+</li>
+<li><a href="/services/truck_railway_delivery"><em class="img3"></em>Доставка автомобильным и ж/д транспортом</a>
+</li>
+<li><a href="/services/storehouse"><em class="img4"></em>Терминальные и складские операции</a>
+</li>
+<li><a href="/services/big_parts"><em class="img5"></em>Перевозка негабаритных и проектных грузов</a>
+</li>
+</ul>
+</div>
+<div id="plugin">
+<ul class="container_12">
+<li><span class="number" data-max='<%=copywriting("number_agents", :scope => :main_page) %>'><%=copywriting("number_agents", :scope => :main_page) %></span>агентов по всему миру</li>
+<li><span class="number" data-max='<%=copywriting("number_tons", :scope => :main_page) %>'><%=copywriting("number_tons", :scope => :main_page) %></span>тонн ежегодного оборота</li>
+<li><span class="number" data-max='<%=copywriting("number_clients", :scope => :main_page) %>'><%=copywriting("number_clients", :scope => :main_page) %></span>клиентов</li>
+<li><span class="number" data-max='<%=copywriting("number_containers", :scope => :main_page) %>'><%=copywriting("number_containers", :scope => :main_page) %></span>контейнеров в месяц</li>
+</ul>
+</div>
+<div class="container_12">
+<div class="grid_6">
+<h2>Наша история</h2>
+<p><%=copywriting("our_history", :scope => :main_page).html_safe %></p>
+</div>
+<div class="grid_6">
+<h2>Фактор успеха</h2>
+<p><%=copywriting("success_factor", :scope => :main_page).html_safe %></p>
+</div>
+</div>
+<div id="time">
+<div class="title-outline container_12">
+<h3 class="title">Мировое время</h3>
+</div>
+<ul class="zone-clock container_12">
+<li id="clock_ny" class="clock_container">
+   <div class="clockHolder">
+      <div class="rotatingWrapper"><img class="hour" src="assets/arrow-hour.png" /></div>
+      <div class="rotatingWrapper"><img class="min" src="assets/arrow-min.png" /></div>
+     <img class="clock" src="assets/base.png" />
+   <div class="lbl">Нью-Йорк</div>
+   </div>
+</li>
+<li id="clock_lon" class="clock_container">
+   <div class="clockHolder">
+      <div class="rotatingWrapper"><img class="hour" src="assets/arrow-hour.png" /></div>
+      <div class="rotatingWrapper"><img class="min" src="assets/arrow-min.png" /></div>
+     <img class="clock" src="assets/base.png" />
+   <div class="lbl">Лондон</div>
+   </div>
+</li>
+<li id="clock_msk" class="clock_container">
+   <div class="clockHolder">
+      <div class="rotatingWrapper"><img class="hour" src="assets/arrow-hour.png" /></div>
+      <div class="rotatingWrapper"><img class="min" src="assets/arrow-min.png" /></div>
+     <img class="clock" src="assets/base.png" />
+   <div class="lbl">Москва</div>
+   </div>
+</li>
+<li id="clock_sha" class="clock_container">
+   <div class="clockHolder">
+      <div class="rotatingWrapper"><img class="hour" src="assets/arrow-hour.png" /></div>
+      <div class="rotatingWrapper"><img class="min" src="assets/arrow-min.png" /></div>
+     <img class="clock" src="assets/base.png" />
+   <div class="lbl">Шанхай</div>
+   </div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>

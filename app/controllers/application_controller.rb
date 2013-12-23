@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
   def index
   end
 
+
+  def index_test
+  end
+
   def price_request
   end
 
