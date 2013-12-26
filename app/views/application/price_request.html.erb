@@ -41,7 +41,7 @@
 
       <div class="grid_4">
         <span class="form-title">E-mail*</span>
-        <%= email_field_tag :mail, nil, :required => true %>
+        <%= email_field_tag :email, nil, :required => true %>
       </div>
       <div class="grid_4">
         <span class="form-title">Телефон</span>
@@ -50,11 +50,11 @@
 
       <div class="grid_4">
         <span class="form-title">Пункт отправления</span>
-        <%= text_field_tag :mail %>
+        <%= text_field_tag :departure %>
       </div>
       <div class="grid_4">
         <span class="form-title">Пункт назначения</span>
-        <%= text_field_tag :phone %>
+        <%= text_field_tag :destination %>
       </div>
 
       <div class="grid_5 ">
@@ -79,7 +79,7 @@
         </div>
         <div class="grid_3">
           <span class="form-title">Вес груза</span>
-          <%= text_field_tag :extra %>
+          <%= text_field_tag :weight %>
         </div>
       </div>
 
