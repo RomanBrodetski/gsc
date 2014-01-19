@@ -22,7 +22,7 @@
 </div>
 
 <div class="cabinet">
-  <%= form_tag 'HIDDEN', :class => "cabinet-form", :id => "cabinet" do %>
+  <%= form_tag 'HIDDEN', :class => "cabinet-form", :id => "cabinet", :target => "_blank" do %>
     <%= text_field_tag :cid, nil, :placeholder => 'Ваш ID', :required => true  %>
     <%= password_field_tag :code, nil, :placeholder => 'Пароль', :required => true  %>
     <%= submit_tag 'Войти', :class => "cabinet-enter" %>
