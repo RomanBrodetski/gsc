@@ -22,10 +22,10 @@
 </div>
 
 <div class="cabinet">
-  <%= form_tag '/', :class => "cabinet-form", :id => "cabinet" do %>
-    <%= text_field_tag :id, nil, :placeholder => 'Ваш ID', :required => true  %>
-    <%= text_field_tag :password, nil, :placeholder => 'Пароль', :required => true  %>
-    <%= submit_tag 'Войти', :class => "cabinet-enter", :type => 'button' %>
+  <%= form_tag 'HIDDEN', :class => "cabinet-form", :id => "cabinet" do %>
+    <%= text_field_tag :cid, nil, :placeholder => 'Ваш ID', :required => true  %>
+    <%= password_field_tag :code, nil, :placeholder => 'Пароль', :required => true  %>
+    <%= submit_tag 'Войти', :class => "cabinet-enter" %>
   <% end %>
 </div>
 
