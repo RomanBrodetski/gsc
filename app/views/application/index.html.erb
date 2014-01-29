@@ -6,9 +6,9 @@
 <li>
 <%= slider.image.html_safe %>
   <div class="container_12 slider-content">
-  <div class="slider-title"><h2><%= slider.headline %></h2>
+  <div class="slider-title"><h2><%= slider.localized_headline(params[:locale]) %></h2>
   </div>
-  <div class="slider-text"><p><%= slider.title %></p>
+  <div class="slider-text"><p><%= slider.localized_title(params[:locale]) %></p>
   </div>
 </div>
 </li>

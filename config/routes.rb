@@ -9,6 +9,8 @@ Gsc::Application.routes.draw do
   get '/test' => "application#index_test"
   get '/price_request' => "application#price_request"
   post '/price_request' => "application#price_request_post"
+  get '/:locale/price_request' => "application#price_request"
+  post '/:locale/price_request' => "application#price_request_post"
   post '/contacts' => "application#contact_post"
   mount Refinery::Core::Engine, :at => '/'
 
