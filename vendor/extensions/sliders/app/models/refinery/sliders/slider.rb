@@ -8,12 +8,12 @@ module Refinery
       validates :image, :presence => true, :uniqueness => true
 
       def localized_title locale
-        locale = '' if locale == :ru || locale == nil
+        locale = '' if  locale == nil || locale.to_sym == :ru
         return self.send("#{locale}_title")
       end
 
       def localized_headline locale
-        locale = '' if locale == :ru || locale == nil
+        locale = '' if  locale == nil || locale.to_sym == :ru
         return self.send("#{locale}_headline")
       end
     end
