@@ -53,7 +53,7 @@
       }
     )
 
-    $('.menu > ul > li.last').on('click', function() {
+    $('.menu > ul > li.last > a').on('click', function() {
       return false;
     })
   });
