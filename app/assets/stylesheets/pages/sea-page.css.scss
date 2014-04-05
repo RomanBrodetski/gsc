@@ -59,7 +59,11 @@
   }
   .rus-map_pic {
     height: 306px;
-    background: url("/assets/rus-sea.png") no-repeat center;
+    img {
+      margin: auto;
+      display: block;
+    }
+    // background: url("/assets/rus-sea.png") no-repeat center;
   }
   .title-outline {
     text-align: center;
