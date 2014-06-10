@@ -76,15 +76,14 @@ body #page { height: auto; min-height: 100%; }
 // #page {background: $page;}
 
 #body {
- padding-bottom: 237px;
+  padding-bottom: 237px;
   margin: 0px auto 60px;
-
 }
 
 #page-title {
   position: relative;
-  height: 150px;
-  background: #5fa6cd;
+  height: 250px;
+  // background: #5fa6cd;
   overflow: hidden;
   margin-top: 60px;
   margin-bottom: 60px;
